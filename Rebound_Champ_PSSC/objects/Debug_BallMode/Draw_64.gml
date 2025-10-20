@@ -1,0 +1,5 @@
+draw_text(x,y,string("Ball Mode (Player): " + string(obj_ball.BallModePLR)))
+draw_text(x,y+20,string("Ball Mode (Enemy): " + string(obj_ball.BallModeEMY)))
+draw_text(x,y+40,string("Ball Turn Speed: " + string(obj_ball.TurnSpeedModifier)))
+draw_text(x,y+60,string("Ball UpTime: " + string(obj_ball.BallUpTime)))
+draw_text(x,y+80,string("Overtime: " + string(obj_ball.Overtime)))

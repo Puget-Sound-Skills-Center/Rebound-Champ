@@ -1,0 +1,1 @@
+Lives = obj_GameStartupStuff.DummyLives

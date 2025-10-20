@@ -1,0 +1,1 @@
+draw_text(x,y, string("Dummy lives: " + string(Lives)))

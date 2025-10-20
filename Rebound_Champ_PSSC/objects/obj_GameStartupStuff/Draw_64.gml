@@ -1,0 +1,1 @@
+//draw_text(1740,120,string("ID: " + string(obj_DummyLife.LifeID)))
