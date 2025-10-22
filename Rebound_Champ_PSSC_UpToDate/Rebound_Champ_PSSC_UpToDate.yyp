@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Rebound_Champ_PSSC",
+  "%Name":"Rebound_Champ_PSSC_UpToDate",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -42,7 +42,7 @@
   "MetaData":{
     "IDEVersion":"2024.2.0.132",
   },
-  "name":"Rebound_Champ_PSSC",
+  "name":"Rebound_Champ_PSSC_UpToDate",
   "resources":[
     {"id":{"name":"Debug_BallDirection","path":"objects/Debug_BallDirection/Debug_BallDirection.yy",},},
     {"id":{"name":"Debug_BallMode","path":"objects/Debug_BallMode/Debug_BallMode.yy",},},
@@ -67,14 +67,17 @@
     {"id":{"name":"obj_ProcHitInd","path":"objects/obj_ProcHitInd/obj_ProcHitInd.yy",},},
     {"id":{"name":"obj_SecondWind","path":"objects/obj_SecondWind/obj_SecondWind.yy",},},
     {"id":{"name":"obj_TensionBar","path":"objects/obj_TensionBar/obj_TensionBar.yy",},},
+    {"id":{"name":"obj_PlayableMirgo","path":"objects/obj_PlayableMirgo/obj_PlayableMirgo.yy",},},
     {"id":{"name":"Path1","path":"objects/Path1/Path1.yy",},},
     {"id":{"name":"BattleRoom","path":"rooms/BattleRoom/BattleRoom.yy",},},
     {"id":{"name":"World_Seg1","path":"rooms/World_Seg1/World_Seg1.yy",},},
     {"id":{"name":"BallFunction","path":"scripts/BallFunction/BallFunction.yy",},},
     {"id":{"name":"MouseChangeScript","path":"scripts/MouseChangeScript/MouseChangeScript.yy",},},
     {"id":{"name":"BrickPath","path":"sprites/BrickPath/BrickPath.yy",},},
-    {"id":{"name":"MirgoFront","path":"sprites/MirgoFront/MirgoFront.yy",},},
     {"id":{"name":"MirgoBack","path":"sprites/MirgoBack/MirgoBack.yy",},},
+    {"id":{"name":"MirgoFront","path":"sprites/MirgoFront/MirgoFront.yy",},},
+    {"id":{"name":"MirgoLeft","path":"sprites/MirgoLeft/MirgoLeft.yy",},},
+    {"id":{"name":"MirgoRight","path":"sprites/MirgoRight/MirgoRight.yy",},},
     {"id":{"name":"sp_PlayerLife","path":"sprites/sp_PlayerLife/sp_PlayerLife.yy",},},
     {"id":{"name":"spr_ball_ExternalGuide","path":"sprites/spr_ball_ExternalGuide/spr_ball_ExternalGuide.yy",},},
     {"id":{"name":"spr_ball_InternalGuide","path":"sprites/spr_ball_InternalGuide/spr_ball_InternalGuide.yy",},},
@@ -96,8 +99,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"BattleRoom","path":"rooms/BattleRoom/BattleRoom.yy",},},
     {"roomId":{"name":"World_Seg1","path":"rooms/World_Seg1/World_Seg1.yy",},},
+    {"roomId":{"name":"BattleRoom","path":"rooms/BattleRoom/BattleRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
