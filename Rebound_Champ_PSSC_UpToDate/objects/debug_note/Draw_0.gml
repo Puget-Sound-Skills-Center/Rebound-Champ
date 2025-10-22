@@ -1,0 +1,1 @@
+draw_text(x,y, "type 'room_goto BattleRoom' in the log console");
