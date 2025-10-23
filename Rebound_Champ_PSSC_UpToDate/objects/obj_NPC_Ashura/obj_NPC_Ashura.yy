@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"debug_note",
+  "%Name":"obj_NPC_Ashura",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_InteractionCircle","path":"objects/obj_InteractionCircle/obj_InteractionCircle.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"debug_note",
+  "name":"obj_NPC_Ashura",
   "overriddenProperties":[],
   "parent":{
-    "name":"DebugStuff",
-    "path":"folders/Objects/LinearWorldAssets/DebugStuff.yy",
+    "name":"NPCS",
+    "path":"folders/Objects/LinearWorldAssets/NPCS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_oomf_Ashura",
+    "path":"sprites/spr_oomf_Ashura/spr_oomf_Ashura.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"debug_note",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_InteractionCircle",
+  "eventList":[],
   "managed":true,
-  "name":"debug_note",
+  "name":"obj_InteractionCircle",
   "overriddenProperties":[],
   "parent":{
-    "name":"DebugStuff",
-    "path":"folders/Objects/LinearWorldAssets/DebugStuff.yy",
+    "name":"LinearWorldAssets",
+    "path":"folders/Objects/LinearWorldAssets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_InteractionCircle",
+    "path":"sprites/spr_InteractionCircle/spr_InteractionCircle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

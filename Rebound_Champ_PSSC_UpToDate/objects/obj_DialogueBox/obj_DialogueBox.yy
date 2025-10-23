@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"debug_note",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_DialogueBox",
+  "eventList":[],
   "managed":true,
-  "name":"debug_note",
+  "name":"obj_DialogueBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"DebugStuff",
-    "path":"folders/Objects/LinearWorldAssets/DebugStuff.yy",
+    "name":"DialogueStuff",
+    "path":"folders/Objects/LinearWorldAssets/DialogueStuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_DialogueBox",
+    "path":"sprites/spr_DialogueBox/spr_DialogueBox.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

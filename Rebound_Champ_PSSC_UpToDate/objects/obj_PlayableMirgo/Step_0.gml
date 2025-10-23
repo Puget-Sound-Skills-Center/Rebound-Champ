@@ -1,7 +1,7 @@
 /// @description Movement system
 
-var h_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var v_input = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+var h_input = (keyboard_check(ord("D")) || keyboard_check(vk_right)) - (keyboard_check(ord("A")) || keyboard_check(vk_left));
+var v_input = (keyboard_check(ord("S")) || keyboard_check(vk_down)) - (keyboard_check(ord("W")) || keyboard_check(vk_up));
 
 // Normalize diagonal movement
 if (h_input != 0 || v_input != 0) {
