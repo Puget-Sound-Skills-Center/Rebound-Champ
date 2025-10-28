@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"OW_DialogueScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"OW_DialogueScript",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

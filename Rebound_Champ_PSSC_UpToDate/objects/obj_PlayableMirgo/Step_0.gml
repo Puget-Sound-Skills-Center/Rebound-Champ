@@ -36,7 +36,7 @@ if (h_input != 0 || v_input != 0) {
 	}
 } else {
     image_speed = 0; // stop animation
-    image_index = 0; // reset to first frame
+    image_index = 1; // reset to first frame
 }
 
 // Apply movement
