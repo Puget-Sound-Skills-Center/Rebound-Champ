@@ -33,6 +33,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"DebugFont","order":1,"path":"fonts/DebugFont/DebugFont.yy",},
+    {"name":"DialogueFont","order":2,"path":"fonts/DialogueFont/DialogueFont.yy",},
     {"name":"Debug_BallDirection","order":1,"path":"objects/Debug_BallDirection/Debug_BallDirection.yy",},
     {"name":"Debug_BallMode","order":2,"path":"objects/Debug_BallMode/Debug_BallMode.yy",},
     {"name":"Debug_TensionPoints","order":3,"path":"objects/Debug_TensionPoints/Debug_TensionPoints.yy",},
@@ -76,11 +77,13 @@
     {"name":"spr_EgoistSlice","order":8,"path":"sprites/spr_EgoistSlice/spr_EgoistSlice.yy",},
     {"name":"spr_Fireball","order":15,"path":"sprites/spr_Fireball/spr_Fireball.yy",},
     {"name":"spr_InteractionCircle","order":3,"path":"sprites/spr_InteractionCircle/spr_InteractionCircle.yy",},
+    {"name":"spr_MirgoPlaceholder","order":1,"path":"sprites/spr_MirgoPlaceholder/spr_MirgoPlaceholder.yy",},
     {"name":"spr_OutsideCursor","order":16,"path":"sprites/spr_OutsideCursor/spr_OutsideCursor.yy",},
     {"name":"spr_Platform","order":13,"path":"sprites/spr_Platform/spr_Platform.yy",},
     {"name":"spr_playerplaceholder","order":10,"path":"sprites/spr_playerplaceholder/spr_playerplaceholder.yy",},
     {"name":"spr_PlayerTrueHitbox","order":14,"path":"sprites/spr_PlayerTrueHitbox/spr_PlayerTrueHitbox.yy",},
     {"name":"spr_ProcHit","order":11,"path":"sprites/spr_ProcHit/spr_ProcHit.yy",},
     {"name":"spr_SecondWInd","order":12,"path":"sprites/spr_SecondWInd/spr_SecondWInd.yy",},
+    {"name":"spr_AshuraPlaceholder","order":2,"path":"sprites/spr_AshuraPlaceholder/spr_AshuraPlaceholder.yy",},
   ],
 }

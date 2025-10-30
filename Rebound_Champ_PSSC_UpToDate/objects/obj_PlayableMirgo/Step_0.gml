@@ -52,7 +52,7 @@ var cam_y = camera_get_view_y(cam);
 var target_x = x - (camera_get_view_width(cam) / 2);
 var target_y = y - (camera_get_view_height(cam) / 2);
 // Smooth movement
-var lerpVal = 0.1;
+var lerpVal = 1;
 cam_x = lerp(cam_x, target_x, lerpVal);
 cam_y = lerp(cam_y, target_y, lerpVal);
 

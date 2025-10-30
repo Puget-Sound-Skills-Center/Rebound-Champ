@@ -1,0 +1,1 @@
+draw_sprite_ext(asset_get_index(IconSprite),IconIndex,x+870,y-310,2.9,2.9,0,c_white,1);
