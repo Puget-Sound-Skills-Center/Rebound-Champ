@@ -17,6 +17,7 @@ if (keyboard_check(vk_shift)) {
 }
 
 // Directional sprite switching
+if(IsInDialogue = false) {
 if (h_input > 0) {
     sprite_index = MirgoRight;
 } else if (h_input < 0) {
@@ -26,8 +27,10 @@ if (h_input > 0) {
 } else if (v_input < 0) {
     sprite_index = MirgoBack;
 }
+}
 
 // Play animation only when moving
+if(IsInDialogue = false) {
 if (h_input != 0 || v_input != 0) {
 	if (keyboard_check(vk_shift)) {
 		image_speed = 1.5; // Sprint animation speed
@@ -37,6 +40,7 @@ if (h_input != 0 || v_input != 0) {
 } else {
     image_speed = 0; // stop animation
     image_index = 1; // reset to first frame
+}
 }
 
 // Apply movement
