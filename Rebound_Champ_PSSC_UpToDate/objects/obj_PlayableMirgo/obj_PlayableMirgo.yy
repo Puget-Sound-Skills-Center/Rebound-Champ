@@ -31,6 +31,7 @@
     {"$GMObjectProperty":"","%Name":"CurrentlyInteracting","filters":[],"listItems":[],"multiselect":false,"name":"CurrentlyInteracting","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"IsInDialogue","filters":[],"listItems":[],"multiselect":false,"name":"IsInDialogue","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"CanAdvance","filters":[],"listItems":[],"multiselect":false,"name":"CanAdvance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"","%Name":"CurrentNPC_Phase","filters":[],"listItems":[],"multiselect":false,"name":"CurrentNPC_Phase","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

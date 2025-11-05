@@ -1,4 +1,8 @@
 window_set_cursor(cr_none)
-cursor_sprite = spr_BattleCursor;
+if(room != World_Seg1) {
+	cursor_sprite = spr_BattleCursor;
+} else {
+	cursor_sprite = spr_Cursor;
+}
 
 show_debug_overlay(true);

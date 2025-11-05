@@ -19,5 +19,5 @@ if (IsInDialogue = false) {
 // Advance through dialogue
 
 if (IsInDialogue = true && CanAdvance = true) {
-	NPCDialogue(CurrentlyInteracting);	
+	NPCDialogue(CurrentlyInteracting, CurrentNPC_Phase);	
 }

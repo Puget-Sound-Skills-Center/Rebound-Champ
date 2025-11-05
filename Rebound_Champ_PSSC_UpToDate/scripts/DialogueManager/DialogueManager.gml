@@ -23,21 +23,62 @@ function EndDialogue() {
 	}
 }
 
-function NPCDialogue(NPC) {
-	// Ashura NPC Dialogue
-	if(NPC == "Ashura") {
+function NPCDialogue(NPC, phase) {
+// Ashura NPC Dialogue
+	if(NPC == "Ashura" && phase == 1) {
 		if(global.DialogueIndex = 1) {
-			CreateDialogue("Ashura", "oh heyy!!", "spr_AshuraPlaceholder", 0)
+			CreateDialogue("???", "woa, hey-", "spr_AshuraPlaceholder", 0);
 		}
 		if(global.DialogueIndex = 2) {
-			CreateDialogue("Ashura", "awesome weather we're having rite..?", "spr_AshuraPlaceholder", 0)
+			CreateDialogue("???", "you look just like me, just without the horns", "spr_AshuraPlaceholder", 0);
 		}
 		if(global.DialogueIndex = 3) {
-			CreateDialogue("Ashura", "..where are we?-", "spr_AshuraPlaceholder", 0)
+			CreateDialogue("???", "thats pretty cool, I guess", "spr_AshuraPlaceholder", 0);
 		}
 		if(global.DialogueIndex = 4) {
 			ClearDialogueBoxes()
 			EndDialogue();
+			obj_NPC_Ashura.NPC_Phase++;
 		}
 	}
+	
+	if(NPC == "Ashura" && phase == 2) {
+		if(global.DialogueIndex = 1) {
+			CreateDialogue("???", "me? ..oh! you must be new here", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 2) {
+			CreateDialogue("Ashura", "I'm Ashura, nice to meet you!", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 3) {
+			CreateDialogue("Ashura", "that being said, I'm not familiar with this\nplace..", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 4) {
+			CreateDialogue("Ashura", "though.. I could give you this manual I\nhave in my pocket", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 5) {
+			CreateDialogue("Ashura", "I don't see much use on it, but I'm sure it'll\nbe of some use to you", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 6) {
+			CreateDialogue("Ashura", "... and one more thing, press [Tab] to access\nyour inventory", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 7) {
+			SystemDialogue("* [Game Manual] has been added to your inventory.");
+		}
+		if(global.DialogueIndex = 8) {
+			ClearDialogueBoxes();
+			EndDialogue();
+			obj_NPC_Ashura.NPC_Phase++;
+		}
+	}
+	
+	if(NPC == "Ashura" && phase == 3) {
+		if(global.DialogueIndex = 1) {
+			CreateDialogue("Ashura", "I hope thats pretty useful to you, hehe-", "spr_AshuraPlaceholder", 0);
+		}
+		if(global.DialogueIndex = 2) {
+			ClearDialogueBoxes()
+			EndDialogue();
+		}
+	}
+// - NPC Dialogue
 }
