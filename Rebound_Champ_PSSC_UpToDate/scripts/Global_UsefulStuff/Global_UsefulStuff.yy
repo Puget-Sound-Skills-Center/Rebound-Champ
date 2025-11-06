@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Global_UsefulStuff",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Global_UsefulStuff",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -17,7 +17,7 @@ if (keyboard_check(vk_shift)) {
 }
 
 // Directional sprite switching
-if(IsInDialogue = false) {
+if(IsInDialogue = false && IsInInventory = false) {
 if (h_input > 0) {
     sprite_index = MirgoRight;
 } else if (h_input < 0) {
@@ -30,7 +30,7 @@ if (h_input > 0) {
 }
 
 // Play animation only when moving
-if(IsInDialogue = false) {
+if(IsInDialogue = false && IsInInventory = false) {
 if (h_input != 0 || v_input != 0) {
 	if (keyboard_check(vk_shift)) {
 		image_speed = 1.5; // Sprint animation speed

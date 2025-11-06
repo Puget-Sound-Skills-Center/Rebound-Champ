@@ -1,3 +1,3 @@
-draw_set_halign(fa_center);
+draw_set_halign(fa_left);
 draw_set_font(NamePlateFont);
-draw_text(x,y,NameDisplay);
+draw_text(global.gui_w-1210,global.gui_h-255,NameDisplay);
