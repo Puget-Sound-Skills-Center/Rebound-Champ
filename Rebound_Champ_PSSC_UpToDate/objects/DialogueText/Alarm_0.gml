@@ -6,7 +6,7 @@ if(DiaProgress <= DiaLength) {
 	// Longer pauses on special characters
 	if (string_char_at(StoredDialogue, DiaProgress-1) == ".") {
 		alarm_set(0,25);
-	} else if (string_char_at(StoredDialogue, DiaProgress-1) == ",") {
+	} else if (string_char_at(StoredDialogue, DiaProgress-1) == "," || string_char_at(StoredDialogue, DiaProgress-1) == "-") {
 		alarm_set(0,16);
 	} else if (string_char_at(StoredDialogue, DiaProgress-1) == "?" || string_char_at(StoredDialogue, DiaProgress-1) == "!") {
 		alarm_set(0,9);

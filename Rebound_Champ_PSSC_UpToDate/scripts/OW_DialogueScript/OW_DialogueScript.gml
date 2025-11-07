@@ -32,6 +32,7 @@ function CreateDialogue(Name, Dialogue, Left, Index1) {
 		DialogueBox.Type = "DialogueBox";
 		// ---------
 		DialogueDisplay.StoredDialogue = Dialogue;
+		DialogueDisplay.DialogueType = "OC";
 	
 	// Left Dialogue Icon
 	var LeftIcon = instance_create_layer(x,y,"UI_OC_Icons",obj_Icon);
@@ -46,9 +47,10 @@ function SystemDialogue(Dialogue) {
 	
 	// Create an absolutely necessary Dialogue Box
 		var DialogueBox = instance_create_layer(x,y,"UI_Dialogue",obj_DialogueBox);
-		var DialogueDisplay = instance_create_layer(x,y,"UI_Text",DialogueText);
+		var DialogueDisplay = instance_create_layer(global.gui_w-1220,global.gui_h-200,"UI_Text",DialogueText);
 		// Properties
 		DialogueBox.Type = "DialogueBox";
 		// ---------
 		DialogueDisplay.StoredDialogue = Dialogue;
+		DialogueDisplay.DialogueType = "System";
 }

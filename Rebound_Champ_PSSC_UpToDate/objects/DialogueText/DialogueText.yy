@@ -34,6 +34,7 @@
     {"$GMObjectProperty":"","%Name":"DiaLength","filters":[],"listItems":[],"multiselect":false,"name":"DiaLength","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"CurrentLetter","filters":[],"listItems":[],"multiselect":false,"name":"CurrentLetter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"","%Name":"DialogueIndex","filters":[],"listItems":[],"multiselect":false,"name":"DialogueIndex","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"","%Name":"DialogueType","filters":[],"listItems":[],"multiselect":false,"name":"DialogueType","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
