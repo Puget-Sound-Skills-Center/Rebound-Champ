@@ -72,6 +72,7 @@ function NPCDialogue(NPC, phase) {
 		}
 		if(global.DialogueIndex = 11) {
 			SystemDialogue("* [Ashura's Handbook] has been added to your inventory.");
+			AddToInventory("Handbook");
 		}
 		if(global.DialogueIndex = 12) {
 			ClearDialogueBoxes();

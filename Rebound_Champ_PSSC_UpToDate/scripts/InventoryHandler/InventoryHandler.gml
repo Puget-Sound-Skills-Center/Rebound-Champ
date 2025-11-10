@@ -1,33 +1,57 @@
 // Handles Global Inventory Variable(s)
-global.PlayerInventory = ["","","","",""];
+global.PlayerInventory = ["", "", "", "", "", "", "", "", "", ""];
 
 
 // Inventory Slot Functions
-function AddToInventory (Item) {
-		if (global.PlayerInventory[4] = "") {
-			array_insert(global.PlayerInventory,0,string(Item));
-		}
-		UpdateSlots();
+function AddToInventory(Item) {
+    for (var i = 0; i < array_length(global.PlayerInventory); i++) {
+        if (global.PlayerInventory[i] == "") {
+            global.PlayerInventory[i] = string(Item);
+            break;
+        }
+    }
+	UpdateSlots();
 }
 
 function UpdateSlots () {
 	with obj_InventorySlot {
 		instance_destroy();	
 	}
+	if(obj_PlayableMirgo.IsInDialogue == false) {
 	SummonSlots();
+	}
+}
+
+function WhatItem(InventorySlot) {
+	if (global.PlayerInventory[InventorySlot] = "") {
+		return 0;	
+	}
+	if (global.PlayerInventory[InventorySlot] = "Handbook") {
+		return 1;	
+	}
+	if (global.PlayerInventory[InventorySlot] = "Gumballs") {
+		return 2;	
+	}
+	if (global.PlayerInventory[InventorySlot] = "Durr") {
+		return 3;	
+	}
 }
 
 function SummonSlots () {
-	for (var i=0;i<5;i++) {
-		var Slot = instance_create_layer(((global.gui_w-1900) + 206*i),global.gui_h-45, "UI_Inventory", obj_InventorySlot);
-		if (global.PlayerInventory[i] = "Handbook") {
-			Slot.InventoryIndex = 1;	
+	for (var inventory_index=0,row=0,column=0; inventory_index<10 ; inventory_index++) {
+		
+		if (column == 0) {
+			var Slot = instance_create_layer(((global.gui_w-1900) + 206*row),global.gui_h-245, "UI_Inventory", obj_InventorySlot);
+			Slot.InventoryIndex = WhatItem(inventory_index);
+		} else if (column == 1) {
+			var Slot = instance_create_layer(((global.gui_w-1900) + 206*row),global.gui_h-50, "UI_Inventory", obj_InventorySlot);
+			Slot.InventoryIndex = WhatItem(inventory_index);
 		}
-		if (global.PlayerInventory[i] = "Gumballs") {
-			Slot.InventoryIndex = 2;	
-		}
-		if (global.PlayerInventory[i] = "Durr") {
-			Slot.InventoryIndex = 3;	
+		if (row < 4) {
+			row++;	
+		} else {
+			column++;
+			row = 0;
 		}
 	}
 }
