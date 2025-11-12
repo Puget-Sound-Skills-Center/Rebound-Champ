@@ -10,7 +10,7 @@ function AddToInventory(Item) {
             break;
         }
     }
-	UpdateSlots();
+	//UpdateSlots();
 }
 
 function UpdateSlots () {
@@ -61,6 +61,22 @@ function OpenInventory() {
 	FreezePlayer();
 	instance_create_layer(x,y,"UI_Base",obj_statbox);
 	UpdateSlots();
+	
+	// Create categories
+	var Inventory = instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Inventory", obj_CategorySelector);
+	Inventory.WhatMode = "Inventory";
+	var Stats = instance_create_layer(global.gui_w-1530,global.gui_h-605, "UI_Inventory", obj_CategorySelector);
+	Stats.WhatMode = "Stats";
+	var Skills = instance_create_layer(global.gui_w-1280,global.gui_h-605, "UI_Inventory", obj_CategorySelector);
+	Skills.WhatMode = "Skills";
+	// Create Manager
+	instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Base", InventoryManager);
+}
+
+function SwitchToStats() {
+	with obj_InventorySlot {
+		instance_destroy();	
+	}
 }
 
 function CloseInventory() {
@@ -68,6 +84,12 @@ function CloseInventory() {
 		instance_destroy();
 	}
 	with obj_InventorySlot {
+		instance_destroy();	
+	}
+	with obj_CategorySelector {
+		instance_destroy();	
+	}
+	with InventoryManager {
 		instance_destroy();	
 	}
 	ThawPlayer();
