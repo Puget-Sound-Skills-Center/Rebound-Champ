@@ -1,1 +1,2 @@
+draw_set_font(DebugFont);
 draw_text(x+20,y-43, string("Charge: " + string(chargeMeter) + "%"))
