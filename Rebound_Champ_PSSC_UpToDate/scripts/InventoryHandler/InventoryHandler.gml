@@ -124,12 +124,33 @@ function OpenInventory() {
 	instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Base", obj_TooltipManager);
 }
 
-function SwitchToStats() {
+// Inventory/Skills -> Stats
+function SwitchToStats() { 
 	with obj_InventorySlot {
+		instance_destroy();	
+	}
+	EvaluateStats();
+}
+
+// Stats/Skills -> Inventory
+function SwitchToInventory() {
+	with obj_LevelHandler {
 		instance_destroy();	
 	}
 }
 
+// Stats/Inventory -> Skills
+function SwitchToSkills() {
+	with obj_InventorySlot {
+		instance_destroy();	
+	}
+	with obj_LevelHandler {
+		instance_destroy();	
+	}
+}
+
+
+// Clear Everything; Close Inventory
 function CloseInventory() {
 	with obj_statbox {
 		instance_destroy();
@@ -144,6 +165,9 @@ function CloseInventory() {
 		instance_destroy();	
 	}
 	with obj_TooltipManager {
+		instance_destroy();	
+	}
+	with obj_LevelHandler {
 		instance_destroy();	
 	}
 	ThawPlayer();

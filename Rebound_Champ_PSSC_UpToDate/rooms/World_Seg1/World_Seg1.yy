@@ -11,6 +11,7 @@
     {"name":"inst_13F091B7","path":"rooms/World_Seg1/World_Seg1.yy",},
     {"name":"inst_4A9D887E","path":"rooms/World_Seg1/World_Seg1.yy",},
     {"name":"inst_43400290","path":"rooms/World_Seg1/World_Seg1.yy",},
+    {"name":"inst_52882FB","path":"rooms/World_Seg1/World_Seg1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -25,6 +26,7 @@
       ],"layers":[],"name":"Characters","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"NPCs","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_13F091B7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13F091B7","objectId":{"name":"obj_NPC_Ashura","path":"objects/obj_NPC_Ashura/obj_NPC_Ashura.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":984.0,},
+        {"$GMRInstance":"","%Name":"inst_52882FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52882FB","objectId":{"name":"obj_EnemyPlaceHolder","path":"objects/obj_EnemyPlaceHolder/obj_EnemyPlaceHolder.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":1024.0,},
       ],"layers":[],"name":"NPCs","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Path","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_418BA201","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_418BA201","objectId":{"name":"Path1","path":"objects/Path1/Path1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.5,"scaleY":1.5,"x":448.0,"y":1024.0,},

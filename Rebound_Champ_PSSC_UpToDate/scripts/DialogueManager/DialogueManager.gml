@@ -90,5 +90,23 @@ function NPCDialogue(NPC, phase) {
 			EndDialogue();
 		}
 	}
+	
+// - EVIL ENEMY Dialogue 
+	if(NPC == "EVIL" && phase == 1) {
+			if(global.DialogueIndex = 1) {
+				CreateDialogue("EVIL GUY", "HEY YOU.", "spr_AshuraPlaceholder", 0);
+			}
+			if(global.DialogueIndex = 2) {
+				CreateDialogue("EVIL GUY", "FIGHT ME", "spr_AshuraPlaceholder", 0);
+			}
+			if(global.DialogueIndex = 3) {
+				CreateDialogue("EVIL GUY", "RIGHT NOW....", "spr_AshuraPlaceholder", 0);
+			}
+			if(global.DialogueIndex = 4) {
+				ClearDialogueBoxes();
+				EndDialogue();
+				room_goto(BattleRoom);
+			}
+	}
 // - NPC Dialogue
 }

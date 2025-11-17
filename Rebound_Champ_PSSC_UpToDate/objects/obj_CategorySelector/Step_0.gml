@@ -7,6 +7,7 @@ if (WhatMode == "Inventory") {
 			Category_Img = 1;
 			if (mouse_check_button_pressed(mb_left)) {
 				InventoryManager.TabMode = "Inventory";
+				SwitchToInventory();
 				UpdateSlots();
 			}
 		}
@@ -43,7 +44,7 @@ if (WhatMode == "Skills") {
 			Category_Img = 1;
 			if (mouse_check_button_pressed(mb_left)) {
 				InventoryManager.TabMode = "Skills";
-				SwitchToStats();
+				SwitchToSkills();
 			}
 		}
 	} else {
