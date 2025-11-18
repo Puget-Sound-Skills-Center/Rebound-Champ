@@ -105,7 +105,7 @@ function NPCDialogue(NPC, phase) {
 			if(global.DialogueIndex = 4) {
 				ClearDialogueBoxes();
 				EndDialogue();
-				room_goto(BattleRoom);
+				BattlePrep();
 			}
 	}
 // - NPC Dialogue

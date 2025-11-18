@@ -1,3 +1,6 @@
+global.Text_sfx = "";
+global.NPC_Noises = [];
+
 function ClearDialogueBoxes() {
 	with(obj_DialogueBox) {
 		instance_destroy();
@@ -33,6 +36,8 @@ function CreateDialogue(Name, Dialogue, Left, Index1) {
 		// ---------
 		DialogueDisplay.StoredDialogue = Dialogue;
 		DialogueDisplay.DialogueType = "OC";
+		DialogueDisplay.TextSFX = global.Text_sfx;
+		DialogueDisplay.NPC_Noise = global.NPC_Noises;
 	
 	// Left Dialogue Icon
 	var LeftIcon = instance_create_layer(x,y,"UI_OC_Icons",obj_Icon);
@@ -53,4 +58,5 @@ function SystemDialogue(Dialogue) {
 		// ---------
 		DialogueDisplay.StoredDialogue = Dialogue;
 		DialogueDisplay.DialogueType = "System";
+		DialogueDisplay.TextSFX = "Systemtextfx";
 }

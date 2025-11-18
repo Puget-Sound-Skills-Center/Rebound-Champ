@@ -5,6 +5,7 @@ global.BorderCoords = [];
 
 // Inventory Slot Functions
 function AddToInventory(Item) {
+	audio_play_sound(ItemPickUp_Notif,1,false);
     for (var i = 0; i < array_length(global.PlayerInventory); i++) {
         if (global.PlayerInventory[i] == "") {
             global.PlayerInventory[i] = string(Item);

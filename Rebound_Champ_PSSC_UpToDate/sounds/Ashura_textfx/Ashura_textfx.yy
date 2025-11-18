@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Ashura_textfx",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.060896,
+  "name":"Ashura_textfx",
+  "parent":{
+    "name":"Ashura_SFXPlaceholder",
+    "path":"folders/Sounds/Ashura_SFXPlaceholder.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Ashura_textfx.wav",
+  "type":0,
+  "volume":1.0,
+}

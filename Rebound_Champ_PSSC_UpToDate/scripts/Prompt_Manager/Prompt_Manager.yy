@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Prompt_Manager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Prompt_Manager",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

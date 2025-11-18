@@ -13,4 +13,7 @@ if (Roll >= RawGuard) {
 	}
 	show_debug_message("PROC HIT!!")
 	obj_GameStartupStuff.DummyLives--
+	if(obj_GameStartupStuff.DummyLives <= 0) {
+		ExitBattle();
+	}
 }

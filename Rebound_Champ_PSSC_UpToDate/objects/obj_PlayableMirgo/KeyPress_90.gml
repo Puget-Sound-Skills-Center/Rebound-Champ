@@ -1,7 +1,7 @@
 /// @description Summon InteractionCircle
 	
 // Position based on direction
-if (IsInDialogue = false && IsInInventory = false) {
+if (IsInDialogue = false && IsInInventory = false && room != BattleRoom) {
 	if(sprite_index = MirgoBack) {
 		instance_create_layer(x,y-25,"UI_Base",obj_InteractionCircle);
 	}
