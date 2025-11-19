@@ -86,7 +86,7 @@ function NPCDialogue(NPC, phase) {
 			CreateDialogue("Ashura", "I hope thats pretty useful to you, hehe-", "spr_AshuraPlaceholder", 0);
 		}
 		if(global.DialogueIndex = 2) {
-			ClearDialogueBoxes()
+			ClearDialogueBoxes();
 			EndDialogue();
 		}
 	}

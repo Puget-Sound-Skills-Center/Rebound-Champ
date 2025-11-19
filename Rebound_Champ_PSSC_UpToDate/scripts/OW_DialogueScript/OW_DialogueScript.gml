@@ -48,7 +48,8 @@ function CreateDialogue(Name, Dialogue, Left, Index1) {
 
 function SystemDialogue(Dialogue) {
 	// Clear Everything
-	ClearDialogueBoxes();		
+	ClearDialogueBoxes();
+	FreezePlayer(); // For Post Battle Feedback
 	
 	// Create an absolutely necessary Dialogue Box
 		var DialogueBox = instance_create_layer(x,y,"UI_Dialogue",obj_DialogueBox);

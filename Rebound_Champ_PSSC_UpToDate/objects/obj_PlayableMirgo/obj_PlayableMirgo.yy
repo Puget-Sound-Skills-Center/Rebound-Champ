@@ -34,6 +34,7 @@
     {"$GMObjectProperty":"","%Name":"CanAdvance","filters":[],"listItems":[],"multiselect":false,"name":"CanAdvance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"CurrentNPC_Phase","filters":[],"listItems":[],"multiselect":false,"name":"CurrentNPC_Phase","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"IsInInventory","filters":[],"listItems":[],"multiselect":false,"name":"IsInInventory","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"","%Name":"PostBattlePrompt","filters":[],"listItems":[],"multiselect":false,"name":"PostBattlePrompt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

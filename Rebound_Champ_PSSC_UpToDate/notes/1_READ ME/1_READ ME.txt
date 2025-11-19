@@ -1,0 +1,7 @@
+---------------- !! All the important variables for future reference !! -----------------
+
+
+
+
+
+----------------- !! All the important functions for future reference !! ----------------

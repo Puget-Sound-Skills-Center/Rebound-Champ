@@ -1,5 +1,6 @@
 if(global.wasInBattle = true) {
 	global.wasInBattle = false;
-	global.NPC_Noises = [""];
+	obj_PlayableMirgo.PostBattlePrompt = true;
+	global.NPC_Noises = ["ItemPickUp_Notif"];
 	alarm_set(0,15);
 }

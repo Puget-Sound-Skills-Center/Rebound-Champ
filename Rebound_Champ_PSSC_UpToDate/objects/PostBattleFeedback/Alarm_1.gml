@@ -1,0 +1,13 @@
+/// @description Run the queue
+
+if(global.PromptQueue != []) {
+	if(global.PromptQueue[0] = "Rewards") {
+		SystemDialogue(string("You gained " + string(EXPgained) + " EXP and " + string(UtokensGained) + " UTokens!"));
+	}
+	if(global.PromptQueue[0] = "LevelUp") {
+		SystemDialogue("You Leveled Up!");
+	}
+	if(global.PromptQueue[0] = "ItemDrop") {
+		SystemDialogue(string("You obtained " + string(ItemGained) + "!"));
+	}
+}

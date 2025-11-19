@@ -12,7 +12,7 @@ function AddToInventory(Item) {
             break;
         }
     }
-	if(obj_PlayableMirgo.IsInDialogue == false or obj_PlayableMirgo.IsInInventory == true) {
+	if(obj_PlayableMirgo.IsInDialogue == false and obj_PlayableMirgo.IsInInventory == true) {
 	UpdateSlots();
 	}
 }

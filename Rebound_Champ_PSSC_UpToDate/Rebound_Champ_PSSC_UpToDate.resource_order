@@ -41,6 +41,7 @@
     {"name":"MainInventory_Font","order":3,"path":"fonts/MainInventory_Font/MainInventory_Font.yy",},
     {"name":"MainInventory_FontALT","order":5,"path":"fonts/MainInventory_FontALT/MainInventory_FontALT.yy",},
     {"name":"MiscInventory_Font","order":4,"path":"fonts/MiscInventory_Font/MiscInventory_Font.yy",},
+    {"name":"1_READ ME","order":9,"path":"notes/1_READ ME/1_READ ME.yy",},
     {"name":"Debug_BallDirection","order":1,"path":"objects/Debug_BallDirection/Debug_BallDirection.yy",},
     {"name":"Debug_BallMode","order":2,"path":"objects/Debug_BallMode/Debug_BallMode.yy",},
     {"name":"Debug_TensionPoints","order":3,"path":"objects/Debug_TensionPoints/Debug_TensionPoints.yy",},

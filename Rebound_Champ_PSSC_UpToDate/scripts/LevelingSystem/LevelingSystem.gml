@@ -4,17 +4,28 @@ global.UTokens = 0;
 global.PlayerCurrentEXP = 0;
 global.EXPNeeded = 10 + (5*global.PlayerLevel);
 
-function GainRewards(EXP,UTokens) {
+function GainRewards(EXP,UTokens,Item) {
+	global.PromptQueue = ["Rewards"];
 	global.PlayerCurrentEXP += EXP;
 	global.UTokens += UTokens;
 	global.EXPNeeded = 10 + (5*global.PlayerLevel);
-	if(global.PlayerCurrentEXP >= global.EXPNeeded) {
+	
+	if(global.PlayerCurrentEXP >= global.EXPNeeded) { // Leveling Up System
+		array_push(global.PromptQueue, "LevelUp");
 		global.PlayerCurrentEXP -= global.EXPNeeded;
 		global.PlayerLevel++;
 		global.SkillPoints++;
 		global.EXPNeeded = 10 + (5*global.PlayerLevel);
 	}
+	
+	if(Item != "") { // If successfully got item
+		array_push(global.PromptQueue, "ItemDrop");
+		AddToInventory(string(Item));
+	}
+	
+	if (obj_PlayableMirgo.IsInInventory = true) {
 	EvaluateStats();
+	}
 }
 
 function EvaluateStats() {

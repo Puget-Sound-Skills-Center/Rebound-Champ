@@ -14,3 +14,5 @@ draw_text(x,y+140, string("IsInInventory: " + string(obj_PlayableMirgo.IsInInven
 if (instance_exists(obj_TooltipManager)) {
     draw_text(x,y+160, string("ToolTipActive: " + string(obj_TooltipManager.ToolTipActive)));
 }
+
+draw_text(x,y+180, string("PromptQueue: " + string(global.PromptQueue)));
