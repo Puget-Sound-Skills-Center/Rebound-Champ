@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"InventorySlot_AndToolTips",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InventorySlot_AndToolTips",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

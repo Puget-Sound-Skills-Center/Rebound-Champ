@@ -122,11 +122,12 @@ function OpenInventory() {
 	Skills.WhatMode = "Skills";
 	// Create Manager
 	instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Base", InventoryManager);
-	instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Base", obj_TooltipManager);
+	instance_create_layer(global.gui_w-1900,global.gui_h-445, "UI_Inventory", obj_TooltipManager);
 }
 
 // Inventory/Skills -> Stats
 function SwitchToStats() { 
+	obj_TooltipManager.IsDisplaying = false;	
 	with obj_InventorySlot {
 		instance_destroy();	
 	}
@@ -142,6 +143,7 @@ function SwitchToInventory() {
 
 // Stats/Inventory -> Skills
 function SwitchToSkills() {
+	obj_TooltipManager.IsDisplaying = false;	
 	with obj_InventorySlot {
 		instance_destroy();	
 	}

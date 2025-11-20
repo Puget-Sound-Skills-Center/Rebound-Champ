@@ -7,7 +7,10 @@ if(global.PromptQueue != []) {
 	if(global.PromptQueue[0] = "LevelUp") {
 		SystemDialogue("You Leveled Up!");
 	}
-	if(global.PromptQueue[0] = "ItemDrop") {
+	if(global.PromptQueue[0] = "ItemDrop" &&  global.PlayerInventory[9] == "") {
 		SystemDialogue(string("You obtained " + string(ItemGained) + "!"));
+		AddToInventory(ItemGained);
+	} else if(global.PromptQueue[0] = "ItemDrop" &&  global.PlayerInventory[9] != "") {
+		SystemDialogue(string("You obtained " + string(ItemGained) + "... But you discarded it because your\ninventory is full."));
 	}
 }
