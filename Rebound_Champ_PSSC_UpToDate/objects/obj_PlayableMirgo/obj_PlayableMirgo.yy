@@ -43,6 +43,9 @@
     "name":"MirgoFront",
     "path":"sprites/MirgoFront/MirgoFront.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"L_WorldMirgo_collisionMask",
+    "path":"sprites/L_WorldMirgo_collisionMask/L_WorldMirgo_collisionMask.yy",
+  },
   "visible":true,
 }

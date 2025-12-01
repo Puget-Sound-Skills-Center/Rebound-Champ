@@ -43,9 +43,23 @@ if (h_input != 0 || v_input != 0) {
 }
 }
 
+// Speed Variables
+var xspd = h_input * current_speed;
+var yspd = v_input * current_speed;
+
+// Collision Stuff
+if place_meeting(x + xspd, y, obj_Border) { //Colliding with wall
+	xspd = 0;
+}
+
+if place_meeting(x, y + yspd, obj_Border) { //Colliding with wall
+	yspd = 0;
+}
+
 // Apply movement
-x += h_input * current_speed;
-y += v_input * current_speed;
+x += xspd;
+y += yspd;
+
 
 // ------------- CAMERA SYSTEM -----------------
 // Camera variables

@@ -46,7 +46,7 @@ function CreateDialogue(Name, Dialogue, Left, Index1) {
 		LeftIcon.IconIndex = Index1;
 }
 
-function SystemDialogue(Dialogue) {
+function SystemDialogue(Dialogue, SFX = "Systemtextfx") {
 	// Clear Everything
 	ClearDialogueBoxes();
 	FreezePlayer(); // For Post Battle Feedback
@@ -59,5 +59,5 @@ function SystemDialogue(Dialogue) {
 		// ---------
 		DialogueDisplay.StoredDialogue = Dialogue;
 		DialogueDisplay.DialogueType = "System";
-		DialogueDisplay.TextSFX = "Systemtextfx";
+		DialogueDisplay.TextSFX = string(SFX);
 }

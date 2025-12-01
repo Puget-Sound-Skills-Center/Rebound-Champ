@@ -12,7 +12,7 @@ if (IsDisplaying == false) {
 		ToolTipDesc = "* Firm written Handbook, could learn a thing or\ntwo from this";
 	}
 	if(DisplaySprIndex == 2) { // Gumballs
-		ToolTipDesc = "* Edible, wonder how it tastes";
+		ToolTipDesc = "* Oddly vibrant, makes you question whether if\nits edible or not-";
 	}
 	if(DisplaySprIndex == 3) { // Durr
 		ToolTipDesc = "* You shoudldn't be even having this in the first\nplace-";

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Path1",
+  "%Name":"obj_Border",
   "eventList":[],
   "managed":true,
-  "name":"Path1",
+  "name":"obj_Border",
   "overriddenProperties":[],
   "parent":{
     "name":"WorldStuff",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BrickPath",
-    "path":"sprites/BrickPath/BrickPath.yy",
+    "name":"BorderWall",
+    "path":"sprites/BorderWall/BorderWall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
