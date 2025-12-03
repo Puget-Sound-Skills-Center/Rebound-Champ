@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"OW_DialogueScript",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Dialogue Scripts",
+    "path":"folders/Scripts/Dialogue Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
