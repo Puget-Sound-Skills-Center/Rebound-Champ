@@ -4,4 +4,7 @@ if (IsInInventory = false && IsInDialogue = false) {
 } else {
 	IsInInventory = false;
 	CloseInventory();
+	with obj_ItemOptions {
+		 instance_destroy();	
+	}
 }

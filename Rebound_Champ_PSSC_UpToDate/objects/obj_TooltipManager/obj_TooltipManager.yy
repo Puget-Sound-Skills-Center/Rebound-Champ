@@ -32,6 +32,8 @@
     {"$GMObjectProperty":"","%Name":"IsDisplaying","filters":[],"listItems":[],"multiselect":false,"name":"IsDisplaying","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"ToolTipDesc","filters":[],"listItems":[],"multiselect":false,"name":"ToolTipDesc","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
     {"$GMObjectProperty":"","%Name":"ItemSelected","filters":[],"listItems":[],"multiselect":false,"name":"ItemSelected","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
+    {"$GMObjectProperty":"","%Name":"HelpfulDesc","filters":[],"listItems":[],"multiselect":false,"name":"HelpfulDesc","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
+    {"$GMObjectProperty":"","%Name":"Desc_Mood","filters":[],"listItems":[],"multiselect":false,"name":"Desc_Mood","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

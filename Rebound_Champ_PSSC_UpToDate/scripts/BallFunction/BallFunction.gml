@@ -30,6 +30,11 @@ function SecondWind() {
 				alarm_set(0,1)
 			}
 			obj_GameStartupStuff.PlayerLives--
+			if (obj_GameStartupStuff.PlayerLives < 1) { // Losing Condition
+				global.wasInBattle = false;
+				global.DeathFlavorText = "The Ball got to you.";
+				GameOver("The Ball got to you.");
+			}
 		with(obj_ball) {
 			if(CurrentTarget = "Player") {
 				obj_player.Cooldown = 0

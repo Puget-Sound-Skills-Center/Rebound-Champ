@@ -131,6 +131,9 @@ function SwitchToStats() {
 	with obj_InventorySlot {
 		instance_destroy();	
 	}
+	with obj_ItemOptions {
+		 instance_destroy();	
+	}
 	EvaluateStats();
 }
 
@@ -149,6 +152,9 @@ function SwitchToSkills() {
 	}
 	with obj_LevelHandler {
 		instance_destroy();	
+	}
+	with obj_ItemOptions {
+		 instance_destroy();	
 	}
 }
 

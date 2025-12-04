@@ -11,9 +11,13 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 			show_debug_message(string("Inventory Index: " + string(InventoryIndex))); // What the inventory has
 			if(InventoryIndex != 0) {
 				CallToolTip(id);
+				ItemOptions();
 			} else {
 				with obj_TooltipManager {
 					IsDisplaying = false;	
+				}
+				with obj_ItemOptions {
+					instance_destroy();	
 				}
 			}
 	}
