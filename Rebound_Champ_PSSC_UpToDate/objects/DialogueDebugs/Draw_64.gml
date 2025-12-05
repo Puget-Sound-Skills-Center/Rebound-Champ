@@ -10,9 +10,12 @@ if (instance_exists(InventoryManager)) {
 
 draw_text(x,y+120, string("IsInDialogue: " + string(obj_PlayableMirgo.IsInDialogue)));
 draw_text(x,y+140, string("IsInInventory: " + string(obj_PlayableMirgo.IsInInventory)));
+draw_text(x,y+160, string("CanAdvance: " + string(obj_PlayableMirgo.CanAdvance)));
+draw_text(x,y+180, string("PostBattlePrompt: " + string(obj_PlayableMirgo.PostBattlePrompt)));
+draw_text(x,y+200, string("Dialogue Box Exists: " + string(diaboxExists)));
 
 if (instance_exists(obj_TooltipManager)) {
-    draw_text(x,y+160, string("ToolTipActive: " + string(obj_TooltipManager.ToolTipActive)));
+    draw_text(x,y+240, string("ToolTipActive: " + string(obj_TooltipManager.ToolTipActive)));
 }
 
-draw_text(x,y+180, string("PromptQueue: " + string(global.PromptQueue)));
+draw_text(x,y+260, string("PromptQueue: " + string(global.PromptQueue)));

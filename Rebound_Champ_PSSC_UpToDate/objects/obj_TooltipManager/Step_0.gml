@@ -24,6 +24,6 @@ if (IsDisplaying == false) {
 		ItemSelected = "Durr";
 		ToolTipDesc = "* You shoudldn't be even having this in the first\nplace-";
 		Desc_Mood = "Negative";
-		HelpfulDesc = "- THIS WILL KILL YOU.";
+		HelpfulDesc = "! THIS WILL KILL YOU.";
 	}
 #endregion

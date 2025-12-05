@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Bell1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.89,
+  "name":"Bell1",
+  "parent":{
+    "name":"OminousBellRings",
+    "path":"folders/Sounds/OminousBellRings.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Bell1.wav",
+  "type":0,
+  "volume":0.33,
+}

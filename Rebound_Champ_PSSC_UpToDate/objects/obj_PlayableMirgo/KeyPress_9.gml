@@ -1,7 +1,7 @@
-if (IsInInventory = false && IsInDialogue = false) {
+if (IsInInventory = false && IsInDialogue = false && PostBattlePrompt = false) {
 	IsInInventory = true;
 	OpenInventory();
-} else {
+} else if (IsInInventory = true){
 	IsInInventory = false;
 	CloseInventory();
 	with obj_ItemOptions {
