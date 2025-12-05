@@ -9,6 +9,12 @@ function CallToolTip(WhatSlot) {
 }
 
 function ItemOptions() {
+	// Clear stuff
+	if (instance_exists(obj_ItemOptions)) {
+		with obj_ItemOptions {
+			instance_destroy();	
+		}
+	}
 	// Create the 2 item options when clicking item in slot
 	var opt1 = instance_create_layer(global.gui_w-798,global.gui_h-445, "UI_Inventory", obj_ItemOptions);
 	opt1.Purpose = "Use";

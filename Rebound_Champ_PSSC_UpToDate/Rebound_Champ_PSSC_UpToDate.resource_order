@@ -54,6 +54,7 @@
     {"name":"debug_note2","order":2,"path":"objects/debug_note2/debug_note2.yy",},
     {"name":"debug_note3","order":3,"path":"objects/debug_note3/debug_note3.yy",},
     {"name":"debug_note4","order":4,"path":"objects/debug_note4/debug_note4.yy",},
+    {"name":"debug_note5","order":5,"path":"objects/debug_note5/debug_note5.yy",},
     {"name":"Debug_TensionPoints","order":3,"path":"objects/Debug_TensionPoints/Debug_TensionPoints.yy",},
     {"name":"DialogueDebugs","order":1,"path":"objects/DialogueDebugs/DialogueDebugs.yy",},
     {"name":"DialogueText","order":4,"path":"objects/DialogueText/DialogueText.yy",},

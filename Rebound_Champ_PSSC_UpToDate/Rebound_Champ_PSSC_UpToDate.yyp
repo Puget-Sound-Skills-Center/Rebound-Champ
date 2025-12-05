@@ -76,6 +76,7 @@
     {"id":{"name":"debug_note2","path":"objects/debug_note2/debug_note2.yy",},},
     {"id":{"name":"debug_note3","path":"objects/debug_note3/debug_note3.yy",},},
     {"id":{"name":"debug_note4","path":"objects/debug_note4/debug_note4.yy",},},
+    {"id":{"name":"debug_note5","path":"objects/debug_note5/debug_note5.yy",},},
     {"id":{"name":"Debug_TensionPoints","path":"objects/Debug_TensionPoints/Debug_TensionPoints.yy",},},
     {"id":{"name":"DialogueDebugs","path":"objects/DialogueDebugs/DialogueDebugs.yy",},},
     {"id":{"name":"DialogueText","path":"objects/DialogueText/DialogueText.yy",},},
