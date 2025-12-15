@@ -187,8 +187,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"World_Seg1","path":"rooms/World_Seg1/World_Seg1.yy",},},
     {"roomId":{"name":"BattleRoom","path":"rooms/BattleRoom/BattleRoom.yy",},},
+    {"roomId":{"name":"World_Seg1","path":"rooms/World_Seg1/World_Seg1.yy",},},
     {"roomId":{"name":"GameOverRoom","path":"rooms/GameOverRoom/GameOverRoom.yy",},},
   ],
   "templateType":"game",

@@ -26,5 +26,8 @@ function ItemOptions() {
 	var opt2 = instance_create_layer(global.gui_w-798,global.gui_h-375, "UI_Inventory", obj_ItemOptions);
 	opt2.Purpose = "Delete";
 	opt2.PurposeDisplay = "Discard Item";
-	
+	opt2.x1 = 1020;
+	opt2.y1 = 642;
+	opt2.x2 = 1195;
+	opt2.y2 = 702;
 }
