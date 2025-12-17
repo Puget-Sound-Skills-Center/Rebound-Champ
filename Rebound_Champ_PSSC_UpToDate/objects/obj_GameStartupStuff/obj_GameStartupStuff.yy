@@ -28,8 +28,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"DummyLives","filters":[],"listItems":[],"multiselect":false,"name":"DummyLives","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
-    {"$GMObjectProperty":"","%Name":"PlayerLives","filters":[],"listItems":[],"multiselect":false,"name":"PlayerLives","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
+    {"$GMObjectProperty":"","%Name":"DummyLives","filters":[],"listItems":[],"multiselect":false,"name":"DummyLives","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varType":1,},
+    {"$GMObjectProperty":"","%Name":"PlayerLives","filters":[],"listItems":[],"multiselect":false,"name":"PlayerLives","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

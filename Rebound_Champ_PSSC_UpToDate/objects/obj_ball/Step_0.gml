@@ -21,6 +21,8 @@ if(BallActive = true) {
 	// Collision States
 	if(place_meeting(x,y, obj_EgoSlice)) { // If ball hits blade
 		if(CurrentTarget = "Player") {
+			image_xscale = 1.4;
+			image_yscale = .6;
 			obj_TensionBar.currentTP = obj_TensionBar.currentTP + obj_TensionBar.TensionGain
 			if (obj_TensionBar.currentTP > obj_TensionBar.maxTP) {
 				obj_TensionBar.currentTP = 100
@@ -58,7 +60,7 @@ if(BallActive = true) {
 		}
 	}
 
-if(speed < 30) {
+if(speed < 30) { // Ball speed calculator
 	TurnSpeedModifier = 4 + OvertimeSetSpeed
 } else if(speed < 60) {
 		TurnSpeedModifier = 8 + OvertimeSetSpeed
@@ -69,4 +71,21 @@ if(speed < 30) {
 			} else if(speed > 120) {
 					TurnSpeedModifier = 16 + (speed / 10)  + OvertimeSetSpeed
 				}
+}
+
+// Ball Squish Effect
+image_xscale = lerp(image_xscale,1,.15);
+image_yscale = lerp(image_yscale,1,.15);
+
+// Ball Trail Effect
+if (speed > 20) {
+	BallTrailActive = true;
+} else {
+	BallTrailActive = false;
+	BTrailLock = false;
+}
+
+if(BallTrailActive == true && BTrailLock == false) {
+	BTrailLock = true
+	alarm_set(5,10);
 }

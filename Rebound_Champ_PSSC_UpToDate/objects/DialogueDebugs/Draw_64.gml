@@ -1,6 +1,7 @@
 draw_text(x,y, string("currently interacting with: " + string(obj_PlayableMirgo.CurrentlyInteracting)));
 draw_text(x,y+20, string("Inventory: " + string(global.PlayerInventory)));
 
+
 draw_text(x,y+50, string("Screen X: " + string(device_mouse_x_to_gui(0))));
 draw_text(x,y+70, string("Screen Y: " + string(device_mouse_y_to_gui(0))));
 
@@ -16,6 +17,7 @@ draw_text(x,y+200, string("Dialogue Box Exists: " + string(diaboxExists)));
 
 if (instance_exists(obj_TooltipManager)) {
     draw_text(x,y+240, string("ToolTipActive: " + string(obj_TooltipManager.ToolTipActive)));
+	draw_text(x + 500,y+20, string("Inventory ID: " + string(obj_TooltipManager.InvSlotSelected)));
 }
 
 draw_text(x,y+260, string("PromptQueue: " + string(global.PromptQueue)));

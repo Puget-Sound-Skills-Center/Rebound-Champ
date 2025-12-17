@@ -10,7 +10,7 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 			if (Purpose == "Use") {
 			UseItem(obj_TooltipManager.ItemSelected) // REALLY IMPORTANT YOU USE THE EXACT NAME OF THE ITEM.	
 			} else if (Purpose == "Delete") {
-				
+				// Find the id of a specific slot and change that inventory of specific index to "";
 			}
 		}
 	}

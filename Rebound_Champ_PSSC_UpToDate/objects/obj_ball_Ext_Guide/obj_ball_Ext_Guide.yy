@@ -10,8 +10,8 @@
   "name":"obj_ball_Ext_Guide",
   "overriddenProperties":[],
   "parent":{
-    "name":"BattleRoomAssets",
-    "path":"folders/Objects/BattleRoomAssets.yy",
+    "name":"BallAssets",
+    "path":"folders/Objects/BattleRoomAssets/BallAssets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -16,3 +16,7 @@ Overtime = false
 OvertimeSetSpeed = 0
 BallModePLR = "Sharp"
 BallModeEMY = "Smooth"
+
+// Ball animations
+BallTrailActive = false;
+BTrailLock = false;

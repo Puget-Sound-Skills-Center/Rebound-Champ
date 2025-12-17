@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ball_Int_Guide",
+  "%Name":"obj_ball_SFX",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":57,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ball_Int_Guide",
+  "name":"obj_ball_SFX",
   "overriddenProperties":[],
   "parent":{
     "name":"BallAssets",
@@ -32,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ball_ExternalGuide",
-    "path":"sprites/spr_ball_ExternalGuide/spr_ball_ExternalGuide.yy",
+    "name":"spr_ball",
+    "path":"sprites/spr_ball/spr_ball.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_ball_ExternalGuide",
-    "path":"sprites/spr_ball_ExternalGuide/spr_ball_ExternalGuide.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
