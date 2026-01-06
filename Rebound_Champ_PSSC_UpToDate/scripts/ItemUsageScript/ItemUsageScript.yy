@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"ItemUsageScript",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"TabSystem",
+    "path":"folders/Scripts/TabSystem.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

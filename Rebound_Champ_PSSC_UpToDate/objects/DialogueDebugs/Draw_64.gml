@@ -17,7 +17,7 @@ draw_text(x,y+200, string("Dialogue Box Exists: " + string(diaboxExists)));
 
 if (instance_exists(obj_TooltipManager)) {
     draw_text(x,y+240, string("ToolTipActive: " + string(obj_TooltipManager.ToolTipActive)));
-	draw_text(x + 500,y+20, string("Inventory ID: " + string(obj_TooltipManager.InvSlotSelected)));
+	draw_text(x + 500,y+50, string("Inventory ID: " + string(obj_TooltipManager.InvSlotSelected)));
 }
 
 draw_text(x,y+260, string("PromptQueue: " + string(global.PromptQueue)));

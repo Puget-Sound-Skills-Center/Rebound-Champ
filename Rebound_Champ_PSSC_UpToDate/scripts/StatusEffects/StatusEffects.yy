@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"InventoryHandler",
+  "%Name":"StatusEffects",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"InventoryHandler",
+  "name":"StatusEffects",
   "parent":{
     "name":"TabSystem",
     "path":"folders/Scripts/TabSystem.yy",
