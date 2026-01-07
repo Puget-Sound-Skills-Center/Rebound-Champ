@@ -8,8 +8,8 @@
   "name":"debug_note2",
   "overriddenProperties":[],
   "parent":{
-    "name":"DebugStuff",
-    "path":"folders/Objects/LinearWorldAssets/DebugStuff.yy",
+    "name":"World Notes",
+    "path":"folders/Objects/LinearWorldAssets/DebugStuff/World Notes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
