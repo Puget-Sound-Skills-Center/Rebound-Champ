@@ -112,6 +112,7 @@ function OpenInventory() {
 	FreezePlayer();
 	instance_create_layer(x,y,"UI_Base",obj_statbox);
 	UpdateSlots();
+	UpdateEffects();
 	
 	// Create categories
 	var Inventory = instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Inventory", obj_CategorySelector);
@@ -177,6 +178,9 @@ function CloseInventory() {
 		instance_destroy();	
 	}
 	with obj_LevelHandler {
+		instance_destroy();	
+	}
+	with obj_EffectSlot {
 		instance_destroy();	
 	}
 	ThawPlayer();

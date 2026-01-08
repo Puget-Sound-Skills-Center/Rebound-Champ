@@ -2,8 +2,68 @@ global.Pos_StatusEffectsList = ["Strength","Speed","Insight","Evasive","Vitality
 global.ActiveStatusEffects = ["","","","","",""];
 global.ASE_Potency = [0,0,0,0,0,0];
 
+global.EffectBorderCoords = [];
+
 // PLAN: When a new effect is applied, it would be added in the ActiveStatusEffects (ASE) array and its potency
 // on the ASE_Potency array. Whenever the gumball function is called, it first declares the effect then the 
+
+function AssignEffectBorders(Index) {
+	if (Index == 0) {
+		global.EffectBorderCoords = [10,710,192,895];
+	}
+	if (Index == 1) {
+		global.EffectBorderCoords = [214,710,400,895];
+	}
+	if (Index == 2) {
+		global.EffectBorderCoords = [420,710,604,895];
+	}
+	if (Index == 3) {
+		global.EffectBorderCoords = [626,710,810,895];
+	}
+	if (Index == 4) {
+		global.EffectBorderCoords = [830,710,1016,895];
+	}
+	if (Index == 5) {
+		global.EffectBorderCoords = [10,907,192,1090];
+	}
+	if (Index == 6) {
+		global.EffectBorderCoords = [214,907,400,1090];
+	}
+}
+
+
+function DeclareEffect(Effect) {
+	if (Effect == "Strength") {
+		return(1);
+	} else if (Effect == "Speed") {
+		return(2);
+	} else if (Effect == "Insight") {
+		return(3);
+	} else if (Effect == "Evasive") {
+		return(4);
+	} else if (Effect == "Vitality") {
+		return(5);
+	} else if (Effect == "Malice") {
+		return(6);
+	}
+}
+
+function UpdateEffects() {
+	if(instance_exists(obj_EffectSlot)) {
+		with obj_EffectSlot {
+			instance_destroy();	
+		}
+	}
+		for (var i = 0; i < array_length(global.ActiveStatusEffects); i++) {
+			if(global.ActiveStatusEffects[i] != "") {
+				var Effect = instance_create_layer(((global.gui_w-890) + 150*i),global.gui_h-10, "UI_Inventory", obj_EffectSlot);
+				Effect.EffectIndex = DeclareEffect(global.ActiveStatusEffects[i]);
+				Effect.EffectPotency = global.ASE_Potency[i];
+			} else if (global.ActiveStatusEffects[i] == "") {
+				break;
+			}
+		}
+}
 
 function GumballFunction() {
 	randomize();
@@ -36,4 +96,5 @@ function GumballFunction() {
 		}
 		
 	}
+	UpdateEffects();
 }
