@@ -12,7 +12,7 @@ if (IsDisplaying == false) {
 		ItemSelected = "Ashura's Handbook"; // Displays name of item
 		ToolTipDesc = "* Firm written Handbook, could learn a thing or\ntwo from this"; // Brief description of item
 		Desc_Mood = "Neutral"; // Connotation of effect of item (Positive, Neutral, Negative)
-		HelpfulDesc = ""; // description of what happens upon using
+		HelpfulDesc = "> Using this will unlock a help menu in your tab\nGUI"; // description of what happens upon using
 	}
 	if(DisplaySprIndex == 2) { // Gumballs
 		ItemSelected = "Gumballs";

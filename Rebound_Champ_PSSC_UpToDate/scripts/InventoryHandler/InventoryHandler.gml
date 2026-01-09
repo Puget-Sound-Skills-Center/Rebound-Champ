@@ -1,14 +1,23 @@
 // Handles Global Inventory Variable(s)
-global.PlayerInventory = ["", "", "", "", "", "", "", "", "", ""];
+global.PlayerInventory = ["", "", "", "", "", "", "", "", "", ""]; // 10 Inventory Slots
+global.PlayerInventoryCharges = [0,0,0,0,0,0,0,0,0,0]; // Good for multi-use items
 global.BorderCoords = [];
 
 
 // Inventory Slot Functions
+
+function ApplyCharge(Item) {
+	if (Item == "Gumballs") {
+		return (3);	
+	}
+}
+
 function AddToInventory(Item) {
 	audio_play_sound(ItemPickUp_Notif,1,false);
     for (var i = 0; i < array_length(global.PlayerInventory); i++) {
         if (global.PlayerInventory[i] == "") {
             global.PlayerInventory[i] = string(Item);
+			global.PlayerInventoryCharges[i] = ApplyCharge(Item);
             break;
         }
     }
@@ -124,6 +133,7 @@ function OpenInventory() {
 	// Create Manager
 	instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Base", InventoryManager);
 	instance_create_layer(global.gui_w-1900,global.gui_h-445, "UI_Inventory", obj_TooltipManager);
+	instance_create_layer(global.gui_w-850,global.gui_h-195, "UI_Inventory", obj_EffectTooltipManager);
 }
 
 // Inventory/Skills -> Stats
@@ -175,6 +185,9 @@ function CloseInventory() {
 		instance_destroy();	
 	}
 	with obj_TooltipManager {
+		instance_destroy();	
+	}
+	with obj_EffectTooltipManager {
 		instance_destroy();	
 	}
 	with obj_LevelHandler {

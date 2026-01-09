@@ -9,25 +9,22 @@ global.EffectBorderCoords = [];
 
 function AssignEffectBorders(Index) {
 	if (Index == 0) {
-		global.EffectBorderCoords = [10,710,192,895];
+		global.EffectBorderCoords = [1022,969,1163,1097];
 	}
 	if (Index == 1) {
-		global.EffectBorderCoords = [214,710,400,895];
+		global.EffectBorderCoords = [1173,969,1312,1097];
 	}
 	if (Index == 2) {
-		global.EffectBorderCoords = [420,710,604,895];
+		global.EffectBorderCoords = [1322,969,1459,1097];
 	}
 	if (Index == 3) {
-		global.EffectBorderCoords = [626,710,810,895];
+		global.EffectBorderCoords = [1472,969,1609,1097];
 	}
 	if (Index == 4) {
-		global.EffectBorderCoords = [830,710,1016,895];
+		global.EffectBorderCoords = [1625,969,1759,1097];
 	}
 	if (Index == 5) {
-		global.EffectBorderCoords = [10,907,192,1090];
-	}
-	if (Index == 6) {
-		global.EffectBorderCoords = [214,907,400,1090];
+		global.EffectBorderCoords = [1773,969,1909,1097];
 	}
 }
 
@@ -57,8 +54,15 @@ function UpdateEffects() {
 		for (var i = 0; i < array_length(global.ActiveStatusEffects); i++) {
 			if(global.ActiveStatusEffects[i] != "") {
 				var Effect = instance_create_layer(((global.gui_w-890) + 150*i),global.gui_h-10, "UI_Inventory", obj_EffectSlot);
-				Effect.EffectIndex = DeclareEffect(global.ActiveStatusEffects[i]);
-				Effect.EffectPotency = global.ASE_Potency[i];
+				AssignEffectBorders(i);
+				Effect.EffectName = global.ActiveStatusEffects[i]; // Name of effect for future reference
+				Effect.EffectIndex = DeclareEffect(global.ActiveStatusEffects[i]); // Used to give proper icon
+				Effect.EffectPotency = global.ASE_Potency[i]; // Shows potency, useful for tooltip
+				// Assign Borders
+				Effect.x1 = global.EffectBorderCoords[0];
+				Effect.y1 = global.EffectBorderCoords[1];
+				Effect.x2 = global.EffectBorderCoords[2];
+				Effect.y2 = global.EffectBorderCoords[3];
 			} else if (global.ActiveStatusEffects[i] == "") {
 				break;
 			}
@@ -68,7 +72,7 @@ function UpdateEffects() {
 function GumballFunction() {
 	randomize();
 	var randompull = string(global.Pos_StatusEffectsList[irandom(array_length(global.Pos_StatusEffectsList) - 1)]);
-	show_debug_message(string(randompull)); // Remove this later 
+	//show_debug_message(string(randompull)); // Remove this later 
 	for (var i = 0; i < array_length(global.ActiveStatusEffects); i++) {
 		
 		if (global.ActiveStatusEffects[i] == "") { // if the effect is New

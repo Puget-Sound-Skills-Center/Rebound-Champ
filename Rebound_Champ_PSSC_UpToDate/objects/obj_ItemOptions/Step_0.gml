@@ -8,14 +8,19 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 			Confirmation = true;
 		} else {
 			if (Purpose == "Use") {
-			UseItem(obj_TooltipManager.ItemSelected) // REALLY IMPORTANT YOU USE THE EXACT NAME OF THE ITEM.
-			global.PlayerInventory[obj_TooltipManager.InvSlotSelected] = "";
-				UpdateSlots();
-				with obj_TooltipManager {
-					IsDisplaying = false;	
-				}
-				with obj_ItemOptions {
-					instance_destroy();	
+				if (global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] > 1) {
+					UseItem(obj_TooltipManager.ItemSelected) // REALLY IMPORTANT YOU USE THE EXACT NAME OF THE ITEM.
+					global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] -= 1;
+				} else {
+					global.PlayerInventory[obj_TooltipManager.InvSlotSelected] = "";
+					global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] = 0;
+					UpdateSlots();
+					with obj_TooltipManager {
+						IsDisplaying = false;	
+					}
+					with obj_ItemOptions {
+						instance_destroy();	
+					}
 				}
 			} else if (Purpose == "Delete") {
 				// Find the id of a specific slot and change that inventory of specific index to "";

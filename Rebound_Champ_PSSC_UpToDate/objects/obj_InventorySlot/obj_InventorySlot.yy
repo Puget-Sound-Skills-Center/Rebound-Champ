@@ -36,6 +36,7 @@
     {"$GMObjectProperty":"","%Name":"IsHoveredOn","filters":[],"listItems":[],"multiselect":false,"name":"IsHoveredOn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"HoverLock","filters":[],"listItems":[],"multiselect":false,"name":"HoverLock","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"Selected_","filters":[],"listItems":[],"multiselect":false,"name":"Selected_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"Charges","filters":[],"listItems":[],"multiselect":false,"name":"Charges","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

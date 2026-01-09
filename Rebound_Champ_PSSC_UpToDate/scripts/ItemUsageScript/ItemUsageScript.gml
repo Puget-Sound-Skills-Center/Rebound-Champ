@@ -5,6 +5,6 @@ function UseItem(Item){
 		GameOver("Why'd you eat it...?");	
 	}
 	if (Item = "Gumballs") {
-		GumballFunction();	
+		GumballFunction();
 	}
 }
