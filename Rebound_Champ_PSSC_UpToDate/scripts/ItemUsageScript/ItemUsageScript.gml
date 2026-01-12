@@ -1,10 +1,9 @@
 // All Existing Items: HandBook, Gumballs, Durr
 function UseItem(Item){
 	if (Item = "Durr") {
-		global.DeathFlavorText = "Why'd you eat it...?";
-		GameOver("Why'd you eat it...?");	
+		ApplyEffect("Marked For Death");
 	}
 	if (Item = "Gumballs") {
-		GumballFunction();
+		GumballFunction(); // found in Status Effects Script
 	}
 }

@@ -8,10 +8,11 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 			Confirmation = true;
 		} else {
 			if (Purpose == "Use") {
-				if (global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] > 1) {
+				if (global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] >= 1) {
 					UseItem(obj_TooltipManager.ItemSelected) // REALLY IMPORTANT YOU USE THE EXACT NAME OF THE ITEM.
 					global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] -= 1;
-				} else {
+				}  
+				if (global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] = 0) {
 					global.PlayerInventory[obj_TooltipManager.InvSlotSelected] = "";
 					global.PlayerInventoryCharges[obj_TooltipManager.InvSlotSelected] = 0;
 					UpdateSlots();

@@ -76,6 +76,7 @@
     {"name":"obj_dummy","order":7,"path":"objects/obj_dummy/obj_dummy.yy",},
     {"name":"obj_DummyLife","order":8,"path":"objects/obj_DummyLife/obj_DummyLife.yy",},
     {"name":"obj_EffectSlot","order":8,"path":"objects/obj_EffectSlot/obj_EffectSlot.yy",},
+    {"name":"obj_EffectTooltipManager","order":9,"path":"objects/obj_EffectTooltipManager/obj_EffectTooltipManager.yy",},
     {"name":"obj_EgoSlice","order":9,"path":"objects/obj_EgoSlice/obj_EgoSlice.yy",},
     {"name":"obj_EgoSliceEffect","order":10,"path":"objects/obj_EgoSliceEffect/obj_EgoSliceEffect.yy",},
     {"name":"obj_EnemyPlaceHolder","order":1,"path":"objects/obj_EnemyPlaceHolder/obj_EnemyPlaceHolder.yy",},
@@ -96,7 +97,6 @@
     {"name":"obj_statbox","order":1,"path":"objects/obj_statbox/obj_statbox.yy",},
     {"name":"obj_TensionBar","order":17,"path":"objects/obj_TensionBar/obj_TensionBar.yy",},
     {"name":"obj_TooltipManager","order":5,"path":"objects/obj_TooltipManager/obj_TooltipManager.yy",},
-    {"name":"obj_EffectTooltipManager","order":9,"path":"objects/obj_EffectTooltipManager/obj_EffectTooltipManager.yy",},
     {"name":"PostBattleFeedback","order":5,"path":"objects/PostBattleFeedback/PostBattleFeedback.yy",},
     {"name":"GameOverRoom","order":2,"path":"rooms/GameOverRoom/GameOverRoom.yy",},
     {"name":"BallFunction","order":1,"path":"scripts/BallFunction/BallFunction.yy",},
@@ -148,6 +148,7 @@
     {"name":"spr_ProcHit","order":11,"path":"sprites/spr_ProcHit/spr_ProcHit.yy",},
     {"name":"spr_SecondWInd","order":12,"path":"sprites/spr_SecondWInd/spr_SecondWInd.yy",},
     {"name":"spr_StatBox","order":1,"path":"sprites/spr_StatBox/spr_StatBox.yy",},
+    {"name":"spr_EffectTooltip","order":1,"path":"sprites/spr_EffectTooltip/spr_EffectTooltip.yy",},
     {"name":"WhiteLight","order":15,"path":"sprites/WhiteLight/WhiteLight.yy",},
   ],
 }

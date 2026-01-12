@@ -6,6 +6,7 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 	if (mouse_check_button_pressed(mb_left)) {
 			show_debug_message(string("Effect Name: " + string(EffectName))); // What number the slot is
 				obj_EffectTooltipManager.SelectedEffect = string(EffectName);
+				obj_EffectTooltipManager.TT_EffectPotency = EffectPotency;
 	}
 	
 }

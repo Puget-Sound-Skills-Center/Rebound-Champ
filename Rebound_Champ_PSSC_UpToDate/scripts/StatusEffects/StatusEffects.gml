@@ -1,4 +1,5 @@
 global.Pos_StatusEffectsList = ["Strength","Speed","Insight","Evasive","Vitality","Malice"]; // # of unique effects = 6
+global.Neg_StatusEffects = ["Marked for Death"]
 global.ActiveStatusEffects = ["","","","","",""];
 global.ASE_Potency = [0,0,0,0,0,0];
 
@@ -42,6 +43,8 @@ function DeclareEffect(Effect) {
 		return(5);
 	} else if (Effect == "Malice") {
 		return(6);
+	} else if (Effect == "Marked For Death") {
+		return(7);
 	}
 }
 
@@ -67,6 +70,18 @@ function UpdateEffects() {
 				break;
 			}
 		}
+}
+
+
+function ApplyEffect(EffectName) {
+	for (var i = 0; i < array_length(global.ActiveStatusEffects); i++) {
+		if (global.ActiveStatusEffects[i] == "") { // if the effect is New
+			global.ActiveStatusEffects[i] = EffectName;
+			global.ASE_Potency[i] += 1;
+			break;
+		}
+	}
+	UpdateEffects();
 }
 
 function GumballFunction() {

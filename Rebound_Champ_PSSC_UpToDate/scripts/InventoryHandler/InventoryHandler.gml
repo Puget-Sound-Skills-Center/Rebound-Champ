@@ -10,6 +10,12 @@ function ApplyCharge(Item) {
 	if (Item == "Gumballs") {
 		return (3);	
 	}
+	if (Item == "Durr") {
+		return (1);	
+	}
+	if (Item == "Handbook") {
+		return (1);	
+	}
 }
 
 function AddToInventory(Item) {
