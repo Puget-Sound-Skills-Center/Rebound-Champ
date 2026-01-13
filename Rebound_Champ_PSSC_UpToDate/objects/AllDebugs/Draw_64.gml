@@ -25,3 +25,10 @@ if (instance_exists(obj_TooltipManager)) {
 }
 
 draw_text(x,y+260, string("PromptQueue: " + string(global.PromptQueue)));
+
+// PlayerStats
+draw_text(x+750,y, string("- Stats -"));
+draw_text(x+750,y+20, string("Player HP: " + string(global.BasePlayerLives)));
+draw_text(x+750,y+40, string("Charge Bonus: " + string(global.ChargeCapBonus)));
+draw_text(x+750,y+60, string("Knockback Bonus: x" + string(1 + (global.BallKnockbackBonus/100))));
+

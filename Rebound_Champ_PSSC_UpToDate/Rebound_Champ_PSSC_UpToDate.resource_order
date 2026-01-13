@@ -23,6 +23,7 @@
     {"name":"LinearWorld","order":1,"path":"folders/Rooms/LinearWorld.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Dialogue Scripts","order":11,"path":"folders/Scripts/Dialogue Scripts.yy",},
+    {"name":"Essential Scripts","order":15,"path":"folders/Scripts/Essential Scripts.yy",},
     {"name":"TabSystem","order":14,"path":"folders/Scripts/TabSystem.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
@@ -136,6 +137,7 @@
     {"name":"spr_DirectionCursor","order":5,"path":"sprites/spr_DirectionCursor/spr_DirectionCursor.yy",},
     {"name":"spr_dummy","order":6,"path":"sprites/spr_dummy/spr_dummy.yy",},
     {"name":"spr_DummyLife","order":7,"path":"sprites/spr_DummyLife/spr_DummyLife.yy",},
+    {"name":"spr_EffectTooltip","order":1,"path":"sprites/spr_EffectTooltip/spr_EffectTooltip.yy",},
     {"name":"spr_EgoistSlice","order":8,"path":"sprites/spr_EgoistSlice/spr_EgoistSlice.yy",},
     {"name":"spr_EVILASHURA","order":1,"path":"sprites/spr_EVILASHURA/spr_EVILASHURA.yy",},
     {"name":"spr_Fireball","order":15,"path":"sprites/spr_Fireball/spr_Fireball.yy",},
@@ -148,7 +150,6 @@
     {"name":"spr_ProcHit","order":11,"path":"sprites/spr_ProcHit/spr_ProcHit.yy",},
     {"name":"spr_SecondWInd","order":12,"path":"sprites/spr_SecondWInd/spr_SecondWInd.yy",},
     {"name":"spr_StatBox","order":1,"path":"sprites/spr_StatBox/spr_StatBox.yy",},
-    {"name":"spr_EffectTooltip","order":1,"path":"sprites/spr_EffectTooltip/spr_EffectTooltip.yy",},
     {"name":"WhiteLight","order":15,"path":"sprites/WhiteLight/WhiteLight.yy",},
   ],
 }

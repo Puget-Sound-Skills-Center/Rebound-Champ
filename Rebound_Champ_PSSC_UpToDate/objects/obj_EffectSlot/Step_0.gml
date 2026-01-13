@@ -10,3 +10,15 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 	}
 	
 }
+
+// Update Stats
+
+if (EffectName == "Strength") {
+	global.StrengthLevel = EffectPotency;
+}
+if (EffectName == "Vitality") {
+	global.VitalityLevel = EffectPotency;
+}
+
+Update_PlayerStats();
+

@@ -73,11 +73,11 @@ function UpdateEffects() {
 }
 
 
-function ApplyEffect(EffectName) {
+function ApplyEffect(EffectName,Potency) {
 	for (var i = 0; i < array_length(global.ActiveStatusEffects); i++) {
 		if (global.ActiveStatusEffects[i] == "") { // if the effect is New
 			global.ActiveStatusEffects[i] = EffectName;
-			global.ASE_Potency[i] += 1;
+			global.ASE_Potency[i] += Potency;
 			break;
 		}
 	}
@@ -116,4 +116,40 @@ function GumballFunction() {
 		
 	}
 	UpdateEffects();
+}
+
+function PotencyFlair(Potency) {
+	if (Potency == 1) {
+		return("I");	
+	}
+	if (Potency == 2) {
+		return("II");	
+	}
+	if (Potency == 3) {
+		return("III");	
+	}
+	if (Potency == 4) {
+		return("IV");	
+	}
+	if (Potency == 5) {
+		return("V");
+	}
+	if (Potency == 6) {
+		return("VI");	
+	}
+	if (Potency == 7) {
+		return("VII");	
+	}
+	if (Potency == 8) {
+		return("VIII");	
+	}
+	if (Potency == 9) {
+		return("IX");	
+	}
+	if (Potency == 10) {
+		return("X");	
+	}
+	if (Potency > 10) {
+		return(string(Potency));	
+	}
 }

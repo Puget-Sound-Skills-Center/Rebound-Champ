@@ -26,4 +26,10 @@ if (IsDisplaying == false) {
 		Desc_Mood = "Negative";
 		HelpfulDesc = "! THIS WILL KILL YOU.";
 	}
+	if(DisplaySprIndex == 4) { // Strength Potion
+		ItemSelected = "Potion of Strength";
+		ToolTipDesc = "* Hell yea bro";
+		Desc_Mood = "Positive";
+		HelpfulDesc = "+ Grants strength 50";
+	}
 #endregion

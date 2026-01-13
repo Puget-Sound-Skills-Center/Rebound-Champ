@@ -23,6 +23,7 @@
     {"name":"inst_64C8CF20","path":"rooms/World_Seg1/World_Seg1.yy",},
     {"name":"inst_42A0E1F1","path":"rooms/World_Seg1/World_Seg1.yy",},
     {"name":"inst_70D8CEF9","path":"rooms/World_Seg1/World_Seg1.yy",},
+    {"name":"inst_36BDF32A","path":"rooms/World_Seg1/World_Seg1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -50,7 +51,12 @@
       ],"layers":[],"name":"Borders","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRInstanceLayer":"","%Name":"Path","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_418BA201","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_418BA201","objectId":{"name":"Path1","path":"objects/Path1/Path1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.5,"scaleY":1.5,"x":448.0,"y":1024.0,},
-        {"$GMRInstance":"","%Name":"inst_2FBA4C10","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FBA4C10","objectId":{"name":"Flooritem","path":"objects/Flooritem/Flooritem.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":263.0,"y":1056.0,},
+        {"$GMRInstance":"","%Name":"inst_2FBA4C10","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FBA4C10","objectId":{"name":"Flooritem","path":"objects/Flooritem/Flooritem.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"Flooritem","path":"objects/Flooritem/Flooritem.yy",},"propertyId":{"name":"ItemName","path":"objects/Flooritem/Flooritem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Durr\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":263.0,"y":1056.0,},
+        {"$GMRInstance":"","%Name":"inst_36BDF32A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36BDF32A","objectId":{"name":"Flooritem","path":"objects/Flooritem/Flooritem.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"Flooritem","path":"objects/Flooritem/Flooritem.yy",},"propertyId":{"name":"ItemName","path":"objects/Flooritem/Flooritem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Potion\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":1056.0,},
       ],"layers":[],"name":"Path","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Debug","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_4A9D887E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4A9D887E","objectId":{"name":"AllDebugs","path":"objects/AllDebugs/AllDebugs.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":96.0,},

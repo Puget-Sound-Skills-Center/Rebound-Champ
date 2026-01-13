@@ -16,6 +16,9 @@ function ApplyCharge(Item) {
 	if (Item == "Handbook") {
 		return (1);	
 	}
+	if (Item == "Potion") {
+		return (1);	
+	}
 }
 
 function AddToInventory(Item) {
@@ -53,6 +56,9 @@ function WhatItem(InventorySlot) {
 	}
 	if (global.PlayerInventory[InventorySlot] = "Durr") {
 		return 3;	
+	}
+	if (global.PlayerInventory[InventorySlot] = "Potion") {
+		return 4;	
 	}
 }
 
