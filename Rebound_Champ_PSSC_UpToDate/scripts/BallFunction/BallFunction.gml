@@ -6,8 +6,9 @@ function EgoRebound(){
 	}
 }
 function ChipGuard() {
+	var MaliceModifier = 1 + (global.GuardBreakBonus/100);
 	with (obj_dummy) {
-		obj_dummy.Guard = obj_dummy.Guard - ((floor(obj_dummy.TimesParried / 20) + floor(obj_ball.speed / 15)) / 4)
+		obj_dummy.Guard = obj_dummy.Guard - (((floor(obj_dummy.TimesParried / 20) + floor(obj_ball.speed / 15)) / 4) * MaliceModifier);
 		alarm_set(0,1)
 	}
 }

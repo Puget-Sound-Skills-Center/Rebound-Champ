@@ -30,6 +30,6 @@ if (IsDisplaying == false) {
 		ItemSelected = "Potion of Strength";
 		ToolTipDesc = "* Hell yea bro";
 		Desc_Mood = "Positive";
-		HelpfulDesc = "+ Grants strength 50";
+		HelpfulDesc = "+ Grants strength 7";
 	}
 #endregion

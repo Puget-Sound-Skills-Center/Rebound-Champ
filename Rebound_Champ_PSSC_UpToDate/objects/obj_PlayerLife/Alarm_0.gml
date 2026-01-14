@@ -1,5 +1,5 @@
 /// @description Remove a life for each proc hit
-if(LifeID = obj_GameStartupStuff.PlayerLives) {
+if(LifeID = global.BasePlayerLives) {
 	hspeed = .25
 	vspeed = -2
 	image_alpha = 1

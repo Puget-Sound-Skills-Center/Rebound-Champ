@@ -10,4 +10,4 @@ if(BallStreak > 10) {
 
 
 
-TensionGain = 4 + obj_player.TPGainModifier + StreakBonus
+TensionGain = global.BaseTPGain + obj_player.TPGainModifier + StreakBonus

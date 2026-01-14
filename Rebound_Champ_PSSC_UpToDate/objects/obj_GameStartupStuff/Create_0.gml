@@ -9,7 +9,7 @@ for (var i=0;i<DummyLives;i++) {
 }
 
 // Player lives create
-for (var i=0;i<PlayerLives;i++) {
+for (var i=0;i<global.BasePlayerLives;i++) {
 	var plrlife = instance_create_layer(96 + (60*i), 64, "UI", obj_PlayerLife)
 	with (plrlife) {
 		plrlife.LifeID = i

@@ -1,4 +1,4 @@
-if (global.Isdead == false) {
+if (global.Isdead == false && room != BattleRoom) {
 	if (IsInInventory = false && IsInDialogue = false && PostBattlePrompt = false) {
 		IsInInventory = true;
 		OpenInventory();

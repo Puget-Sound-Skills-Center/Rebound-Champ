@@ -11,12 +11,16 @@ global.MaliceLevel = 0;
 global.BasePlayerLives = 3;
 global.ChargeCapBonus = 0;
 global.BallKnockbackBonus = 0;
+global.BaseTPGain = 1;
+global.GuardBreakBonus = 0;
 
 
 
 function Update_PlayerStats() { // Updates everytime an effect is applied, skill point allocated, etc.
 	show_debug_message("Updated player Stats");
 	global.BasePlayerLives = 3 + global.VitalityLevel;
-	global.ChargeCapBonus = 0 + (global.StrengthLevel * 125);
+	global.ChargeCapBonus = 0 + (global.StrengthLevel * 25);
 	global.BallKnockbackBonus = 0 + (global.StrengthLevel * 5);
+	global.GuardBreakBonus = 0 + (global.MaliceLevel * 15)
+	global.BaseTPGain = 1 + global.InsightLevel;
 }

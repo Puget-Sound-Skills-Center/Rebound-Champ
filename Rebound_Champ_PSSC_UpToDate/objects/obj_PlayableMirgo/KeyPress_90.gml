@@ -1,7 +1,7 @@
 /// @description Summon InteractionCircle
 	
 // Position based on direction
-if (IsInDialogue = false && IsInInventory = false && room != BattleRoom && PostBattlePrompt = false) {
+if (IsInDialogue = false && IsInInventory = false && room == World_Seg1 && PostBattlePrompt = false) {
 	if(sprite_index = MirgoBack) {
 		instance_create_layer(x,y-25,"UI_Base",obj_InteractionCircle);
 	}
@@ -18,15 +18,15 @@ if (IsInDialogue = false && IsInInventory = false && room != BattleRoom && PostB
 
 // Advance through dialogue
 
-if (IsInDialogue = true && CanAdvance = true && PostBattlePrompt = false) {
+if (IsInDialogue = true && CanAdvance = true && PostBattlePrompt = false && room == World_Seg1) {
 	NPCDialogue(CurrentlyInteracting, CurrentNPC_Phase);
 	show_debug_message("progress dialogue");
-} else if (IsInDialogue = true && CanAdvance = true && PostBattlePrompt = true) {
+} else if (IsInDialogue = true && CanAdvance = true && PostBattlePrompt = true && room == World_Seg1) {
 	PostBattlePrompt = false;
 		EndDialogue();
 		ClearDialogueBoxes();
 		ThawPlayer();
-} else if (instance_exists(obj_DialogueBox) && PostBattlePrompt = true && CanAdvance = true) {
+} else if (instance_exists(obj_DialogueBox) && PostBattlePrompt = true && CanAdvance = true && room == World_Seg1) {
 	show_debug_message("going through post battle feedback");
 	if(array_length(global.PromptQueue) > 1) {
 		array_delete(global.PromptQueue,0,1);

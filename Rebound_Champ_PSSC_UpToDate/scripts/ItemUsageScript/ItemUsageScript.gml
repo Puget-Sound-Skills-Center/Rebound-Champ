@@ -7,6 +7,6 @@ function UseItem(Item){
 		GumballFunction(); // found in Status Effects Script
 	}
 	if (Item = "Potion of Strength") {
-		ApplyEffect("Strength",50);
+		ApplyEffect("Strength",7);
 	}
 }

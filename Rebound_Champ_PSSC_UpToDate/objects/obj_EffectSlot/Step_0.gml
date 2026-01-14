@@ -16,8 +16,20 @@ if (point_in_rectangle(mx, my, x1, y1, x2, y2)) {
 if (EffectName == "Strength") {
 	global.StrengthLevel = EffectPotency;
 }
+if (EffectName == "Speed") {
+	global.SpeedLevel = EffectPotency;
+}
+if (EffectName == "Insight") {
+	global.InsightLevel = EffectPotency;
+}
+if (EffectName == "Evasive") {
+	global.EvasiveLevel = EffectPotency;
+}
 if (EffectName == "Vitality") {
 	global.VitalityLevel = EffectPotency;
+}
+if (EffectName == "Malice") {
+	global.MaliceLevel = EffectPotency;
 }
 
 Update_PlayerStats();

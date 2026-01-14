@@ -2,8 +2,8 @@ draw_text(x,y, string("currently interacting with: " + string(obj_PlayableMirgo.
 draw_text(x,y+20, string("Inventory : " + string(global.PlayerInventory)));
 draw_text(x,y+40, string("InvCharges: " + string(global.PlayerInventoryCharges)));
 
-draw_text(x+500,y+80, string("Active Status Effects: " + string(global.ActiveStatusEffects)));
-draw_text(x+500,y+100, string("Status Effect Potency: " + string(global.ASE_Potency)));
+draw_text(x+500,y+180, string("Active Status Effects: " + string(global.ActiveStatusEffects)));
+draw_text(x+500,y+200, string("Status Effect Potency: " + string(global.ASE_Potency)));
 
 
 draw_text(x,y+60, string("Screen X: " + string(device_mouse_x_to_gui(0))));
@@ -31,4 +31,5 @@ draw_text(x+750,y, string("- Stats -"));
 draw_text(x+750,y+20, string("Player HP: " + string(global.BasePlayerLives)));
 draw_text(x+750,y+40, string("Charge Bonus: " + string(global.ChargeCapBonus)));
 draw_text(x+750,y+60, string("Knockback Bonus: x" + string(1 + (global.BallKnockbackBonus/100))));
+draw_text(x+750,y+80, string("Guard Break Bonus: x" + string(1 + (global.GuardBreakBonus/100))));
 
