@@ -55,7 +55,11 @@ if(BallActive = true) {
 			obj_TensionBar.BallStreak = 0
 			BallSpeedStored = speed / 1.5
 			speed = 1
-			SecondWind()
+			if(global.DodgeChance > 0) {
+				RollForDodge();	
+			} else {
+				SecondWind();	
+			}
 			alarm_set(4,10)
 		}
 	}

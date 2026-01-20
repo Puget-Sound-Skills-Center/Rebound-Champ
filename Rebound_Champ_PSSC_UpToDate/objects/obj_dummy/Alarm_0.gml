@@ -1,6 +1,6 @@
 /// @description Assess Guard
 RawGuard = Guard * 100
-randomize()
+randomize();
 Roll = irandom_range(1,10000)
 if (Roll >= RawGuard) {
 	with(obj_DummyLife) {

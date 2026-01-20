@@ -2,12 +2,12 @@
 	if (SelectedEffect == "Strength") { // REFER TO obj_player > Global Left Released Event
 		EffectConnotation = "Positive";
 		DisplayTooltip = "Strong and hard-hitting, synergizes well with malice";
-		StatInfo = string("Increases charge meter by " + string(25*TT_EffectPotency) + " and ball knockback by " + string(5*TT_EffectPotency) + "%");
+		StatInfo = string("Increases charge meter by " + string(10*TT_EffectPotency) + " and ball knockback by " + string(5*TT_EffectPotency) + "%");
 	}
 	if (SelectedEffect == "Speed") { // REFER TO obj_player > Global Left Released Event
 		EffectConnotation = "Positive";
 		DisplayTooltip = "With movements so swift and fluid, everything to you\nfeels so light";
-		StatInfo = string("Decreases swing cooldown by " + string(7.5*TT_EffectPotency) + "%\n* Increases movement speed by " + string(5*TT_EffectPotency) + "%");
+		StatInfo = string("Decreases swing cooldown by " + string(.1*TT_EffectPotency) + " seconds\n* Increases movement speed by " + string(2.5*TT_EffectPotency) + "%");
 	}
 	if (SelectedEffect == "Insight") { // REFER TO 
 		EffectConnotation = "Positive";

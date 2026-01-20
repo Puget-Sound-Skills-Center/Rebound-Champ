@@ -13,10 +13,37 @@ function ChipGuard() {
 	}
 }
 
+
+function RollForDodge() {
+	var RawGuard = global.DodgeChance;
+	if (RawGuard > 100) {
+		RawGuard = 100;
+	}
+	randomize();
+	var Roll = irandom_range(1,100);
+	show_debug_message(string("Chance: " + string(RawGuard) + "% , Roll:" + string(Roll)));
+	if (Roll <= RawGuard) { // Dodge Proc'd
+		instance_create_layer(obj_PlayerHeart.x,obj_PlayerHeart.y-90,"Instances",obj_DodgeInd);
+		show_debug_message("PROC Dodge!!");
+		with(obj_ball) { // Code to change targets
+			if(CurrentTarget = "Player") {
+				obj_player.Cooldown = 0
+				BallUpTime = 0
+				CurrentTarget = "Enemy"
+				IsTargettingEnemy = true
+				direction = direction + 180
+				}
+			}
+	} else if (Roll > RawGuard) {
+		show_debug_message("Dodge Failed");
+		SecondWind();
+	}
+}
+
 function SecondWind() {
 	if (obj_TensionBar.currentTP = 100) { 
 		obj_TensionBar.currentTP = 0
-		instance_create_layer(obj_PlayerHeart.x,obj_PlayerHeart.y-90,"Instances",obj_SecondWind)
+		instance_create_layer(obj_PlayerHeart.x,obj_PlayerHeart.y-90,"Instances",obj_SecondWind);
 			with(obj_ball) {
 			if(CurrentTarget = "Player") {
 				obj_player.Cooldown = 0
