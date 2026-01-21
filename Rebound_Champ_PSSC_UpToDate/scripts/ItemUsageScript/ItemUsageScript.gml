@@ -9,4 +9,7 @@ function UseItem(Item){
 	if (Item = "Potion of Strength") {
 		ApplyEffect("Strength",7);
 	}
+	if (Item = "Ashura's Handbook") {
+		InventoryManager.UsedManual = true;
+	}
 }

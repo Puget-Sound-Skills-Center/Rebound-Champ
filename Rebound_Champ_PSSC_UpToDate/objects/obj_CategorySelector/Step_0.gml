@@ -55,6 +55,24 @@ if (WhatMode == "Skills") {
 		}
 	}
 }
+
+if (WhatMode == "Help") {
+	if (point_in_rectangle(mx, my, 8, 329, 244, 402)) {
+		if (WhatMode != InventoryManager.TabMode) {
+			Category_Img = 1;
+			if (mouse_check_button_pressed(mb_left)) {
+				show_debug_message("Clicked Help");
+				instance_create_layer(global.gui_w/2,(global.gui_h/2) + 50, "UI_Important", obj_ManualGUI);
+			}
+		}
+	} else {
+		if (WhatMode == InventoryManager.TabMode) {
+			Category_Img = 2;
+		} else {
+			Category_Img = 0;
+		}
+	}
+}
 // -----------------------------------------------
 
 

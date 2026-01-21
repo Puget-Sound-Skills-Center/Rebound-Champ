@@ -142,6 +142,8 @@ function OpenInventory() {
 	Stats.WhatMode = "Stats";
 	var Skills = instance_create_layer(global.gui_w-1280,global.gui_h-605, "UI_Inventory", obj_CategorySelector);
 	Skills.WhatMode = "Skills";
+	var Help = instance_create_layer(global.gui_w-1780,global.gui_h-685, "UI_Inventory", obj_CategorySelector);
+	Help.WhatMode = "Help";
 	// Create Manager
 	instance_create_layer(global.gui_w-1780,global.gui_h-605, "UI_Base", InventoryManager);
 	instance_create_layer(global.gui_w-1900,global.gui_h-445, "UI_Inventory", obj_TooltipManager);

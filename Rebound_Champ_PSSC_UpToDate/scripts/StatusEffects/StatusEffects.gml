@@ -96,21 +96,39 @@ function GumballFunction() {
 			break;
 		} else if (global.ActiveStatusEffects[i] == "Strength" && randompull == "Strength") { // if the effect is Strength
 			global.ASE_Potency[i] += 1;
+			if (global.ASE_Potency[i] > 10) { // Cap effect at 10
+				global.ASE_Potency[i] = 10;
+			}
 			break;
 		} else if (global.ActiveStatusEffects[i] == "Speed" && randompull == "Speed") { // if the effect is Speed
 			global.ASE_Potency[i] += 1;
+			if (global.ASE_Potency[i] > 10) { // Cap effect at 10
+				global.ASE_Potency[i] = 10;
+			}
 			break;
 		} else if (global.ActiveStatusEffects[i] == "Insight" && randompull == "Insight") { // if the effect is Insight
 			global.ASE_Potency[i] += 1;
+			if (global.ASE_Potency[i] > 10) { // Cap effect at 10
+				global.ASE_Potency[i] = 10;
+			}
 			break;
 		} else if (global.ActiveStatusEffects[i] == "Evasive" && randompull == "Evasive") { // if the effect is Evasive
 			global.ASE_Potency[i] += 1;
+			if (global.ASE_Potency[i] > 10) { // Cap effect at 10
+				global.ASE_Potency[i] = 10;
+			}
 			break;
 		} else if (global.ActiveStatusEffects[i] == "Vitality" && randompull == "Vitality") { // if the effect is Vitality
 			global.ASE_Potency[i] += 1;
+			if (global.ASE_Potency[i] > 10) { // Cap effect at 10
+				global.ASE_Potency[i] = 10;
+			}
 			break;
 		} else if (global.ActiveStatusEffects[i] == "Malice" && randompull == "Malice") { // if the effect is Malice
 			global.ASE_Potency[i] += 1;
+			if (global.ASE_Potency[i] > 10) { // Cap effect at 10
+				global.ASE_Potency[i] = 10;
+			}
 			break;
 		}
 		
