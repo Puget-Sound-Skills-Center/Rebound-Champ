@@ -1,3 +1,7 @@
+// Global Misc Stuff 
+global.UsedManual = true;
+global.ManualActive = false;
+
 // Global Positive stat changers
 global.StrengthLevel = 0;
 global.SpeedLevel = 0;

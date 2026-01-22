@@ -10,6 +10,6 @@ function UseItem(Item){
 		ApplyEffect("Strength",7);
 	}
 	if (Item = "Ashura's Handbook") {
-		InventoryManager.UsedManual = true;
+		global.UsedManual = true;
 	}
 }
