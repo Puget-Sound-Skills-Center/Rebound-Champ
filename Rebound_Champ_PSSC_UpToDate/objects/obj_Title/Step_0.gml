@@ -1,0 +1,1 @@
+y = lerp(y, start_y + sin(current_time * speed) * amplitude, 0.1);

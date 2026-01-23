@@ -1,3 +1,4 @@
+
 // Dummy lives create 
 for (var i=0;i<DummyLives;i++) {
 	var life = instance_create_layer(1920 - (60*i), 64, "UI", obj_DummyLife)
@@ -17,4 +18,7 @@ for (var i=0;i<global.BasePlayerLives;i++) {
 		//show_debug_message(plrlife.x)
 	}
 }
+
+var SlideinBox = instance_create_layer(x,0,"BlackBar",obj_TransitionBox);
+SlideinBox.TransitionType = "SlideOut";
 

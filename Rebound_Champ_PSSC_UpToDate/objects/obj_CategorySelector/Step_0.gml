@@ -63,6 +63,9 @@ if (WhatMode == "Help") {
 			if (mouse_check_button_pressed(mb_left) && global.ManualActive == false) {
 				show_debug_message("Clicked Help");
 				instance_create_layer(global.gui_w/2,(global.gui_h/2) + 50, "UI_Important", obj_ManualGUI);
+				// Hide layers
+				layer_set_visible("UI_Inventory",false);
+				layer_set_visible("UI_Base",false);
 			}
 		}
 	} else {

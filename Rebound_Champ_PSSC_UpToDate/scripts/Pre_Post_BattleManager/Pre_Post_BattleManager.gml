@@ -10,7 +10,8 @@ function BattlePrep(){
 	global.playerX = obj_PlayableMirgo.x;
 	global.playerY = obj_PlayableMirgo.y;
 	global.wasInBattle = true;
-	room_goto(BattleRoom);
+	var SlideinBox = instance_create_layer(0,-1100,"BlackBar",obj_TransitionBox);
+	SlideinBox.TransitionType = "SlideIn";
 }
 
 function ExitBattle(){

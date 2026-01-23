@@ -1,7 +1,7 @@
 if (HoldCharge = true) {
 	//show_debug_message("Released")
 	var ChargePercentage = (obj_Debug_HoldIndicator.chargeMeter / obj_Debug_HoldIndicator.MaxCharge)
-	Cooldown = 1.5
+	Cooldown = global.BaseCoolDown
 	HoldCharge = false
 	ChargePower = obj_Debug_HoldIndicator.chargeMeter
 	//show_debug_message(string("Charge: " + string(ChargePower) + "%"))

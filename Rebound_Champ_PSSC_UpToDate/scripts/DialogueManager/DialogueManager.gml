@@ -92,17 +92,16 @@ function NPCDialogue(NPC, phase) {
 	}
 	
 // - EVIL ENEMY Dialogue 
-	if(NPC == "EVIL" && phase == 1) {
+	if(NPC == "Dummy" && phase == 1) {
 			if(global.DialogueIndex = 1) {
-				CreateDialogue("EVIL GUY", "HEY YOU.", "spr_AshuraPlaceholder", 0);
+				CreateDialogue("", "It's a dummy, sitting there conveniently\nin your way", "spr_blank", 0);
 			}
-			if(global.DialogueIndex = 2) {
-				CreateDialogue("EVIL GUY", "FIGHT ME", "spr_AshuraPlaceholder", 0);
+			if(global.DialogueIndex = 2 && global.UsedManual == true) {
+				CreateDialogue("", "You feel ready upon reading that manual", "spr_blank", 0);
+			} else if(global.DialogueIndex = 2 && global.UsedManual == false) {
+				CreateDialogue("", "You prepare yourself for whats coming", "spr_blank", 0);
 			}
 			if(global.DialogueIndex = 3) {
-				CreateDialogue("EVIL GUY", "RIGHT NOW....", "spr_AshuraPlaceholder", 0);
-			}
-			if(global.DialogueIndex = 4) {
 				ClearDialogueBoxes();
 				EndDialogue();
 				BattlePrep();

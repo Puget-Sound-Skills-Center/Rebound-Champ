@@ -19,3 +19,6 @@ if(ItemGained != "") {
 }
 alarm_set(1,6);
 
+with obj_Border {
+	alarm_set(0,1);	
+}

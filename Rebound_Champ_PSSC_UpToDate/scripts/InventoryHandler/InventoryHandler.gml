@@ -159,11 +159,17 @@ function SwitchToStats() {
 	with obj_ItemOptions {
 		 instance_destroy();	
 	}
+	with obj_SkillsHandler {
+		instance_destroy();	
+	}
 	EvaluateStats();
 }
 
 // Stats/Skills -> Inventory
 function SwitchToInventory() {
+	with obj_SkillsHandler {
+		instance_destroy();	
+	}
 	with obj_LevelHandler {
 		instance_destroy();	
 	}
@@ -181,6 +187,7 @@ function SwitchToSkills() {
 	with obj_ItemOptions {
 		 instance_destroy();	
 	}
+	DisplaySkills();
 }
 
 
@@ -208,6 +215,9 @@ function CloseInventory() {
 		instance_destroy();	
 	}
 	with obj_EffectSlot {
+		instance_destroy();	
+	}
+	with obj_SkillsHandler {
 		instance_destroy();	
 	}
 	ThawPlayer();

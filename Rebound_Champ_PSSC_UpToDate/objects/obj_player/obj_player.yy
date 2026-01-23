@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_playerplaceholder",
-    "path":"sprites/spr_playerplaceholder/spr_playerplaceholder.yy",
+    "name":"MirgoRight_BattleScaled",
+    "path":"sprites/MirgoRight_BattleScaled/MirgoRight_BattleScaled.yy",
   },
   "spriteMaskId":null,
   "visible":true,

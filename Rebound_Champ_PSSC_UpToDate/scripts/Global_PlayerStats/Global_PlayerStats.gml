@@ -1,5 +1,6 @@
+
 // Global Misc Stuff 
-global.UsedManual = true;
+global.UsedManual = false;
 global.ManualActive = false;
 
 // Global Positive stat changers

@@ -41,3 +41,7 @@ function EvaluateStats() {
 	StatDisplay.Skill_Points = global.SkillPoints;
 	StatDisplay.UTokens = global.UTokens;
 }
+
+function DisplaySkills() {
+	var SkillsDisplay = instance_create_layer(global.gui_w-1850,global.gui_h-525, "UI_Inventory", obj_SkillsHandler);
+}
