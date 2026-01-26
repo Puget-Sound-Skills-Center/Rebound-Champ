@@ -21,6 +21,8 @@ if(BallActive = true) {
 	// Collision States
 	if(place_meeting(x,y, obj_EgoSlice)) { // If ball hits blade
 		if(CurrentTarget = "Player") {
+			audio_play_sound(BallHit,1,false);
+			audio_play_sound(BallHit2,1,false);
 			image_xscale = 1.4;
 			image_yscale = .6;
 			obj_TensionBar.currentTP = obj_TensionBar.currentTP + obj_TensionBar.TensionGain
@@ -42,6 +44,7 @@ if(BallActive = true) {
 	}
 	if(place_meeting(x,y, obj_dummy)) { // If ball hits dummy
 		if(CurrentTarget = "Enemy") {
+			audio_play_sound(EnemyDamage,1,false);
 			BallUpTime = 0
 			ChipGuard()
 			speed = speed - BallSpeedModifer
@@ -52,6 +55,7 @@ if(BallActive = true) {
 	}
 	if(place_meeting(x,y, obj_PlayerHeart)) { // If ball hits player, specifically the heart
 		if(CurrentTarget = "Player") {
+			audio_play_sound(PlayerDamaged,1,false);
 			obj_TensionBar.BallStreak = 0
 			BallSpeedStored = speed / 1.5
 			speed = 1

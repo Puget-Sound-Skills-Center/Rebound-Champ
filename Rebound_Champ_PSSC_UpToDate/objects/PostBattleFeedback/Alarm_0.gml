@@ -1,4 +1,5 @@
 // Clear all existing effects after battle
+debug_note6.displaytext = "< Access to gumball machine";
 global.StrengthLevel = 0;
 global.SpeedLevel = 0;
 global.InsightLevel = 0;

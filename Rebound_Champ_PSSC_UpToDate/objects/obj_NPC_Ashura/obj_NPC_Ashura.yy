@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"NPCS",
-    "path":"folders/Objects/LinearWorldAssets/NPCS.yy",
+    "path":"folders/Objects/LinearWorldAssets/DialogueStuff/NPCS.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -5,6 +5,7 @@ if (HoldCharge = true) {
 	HoldCharge = false
 	ChargePower = obj_Debug_HoldIndicator.chargeMeter
 	//show_debug_message(string("Charge: " + string(ChargePower) + "%"))
+	audio_play_sound(SwordSwing,1,false);
 	var _slice = instance_create_layer(obj_PlayerHeart.x,obj_PlayerHeart.y,"Instances",obj_EgoSlice);
 	with (_slice) {
 		image_xscale = 2 + ((100 * ChargePercentage) / 15)

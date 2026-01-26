@@ -5,4 +5,4 @@ if(room == BattleRoom) {
 	cursor_sprite = spr_Cursor;
 }
 
-show_debug_overlay(true);
+//show_debug_overlay(true);

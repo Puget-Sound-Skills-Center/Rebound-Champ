@@ -25,6 +25,7 @@ function RollForDodge() {
 	if (Roll <= RawGuard) { // Dodge Proc'd
 		instance_create_layer(obj_PlayerHeart.x,obj_PlayerHeart.y-90,"Instances",obj_DodgeInd);
 		show_debug_message("PROC Dodge!!");
+		audio_play_sound(DodgeEffect,1,false);
 		with(obj_ball) { // Code to change targets
 			if(CurrentTarget = "Player") {
 				obj_player.Cooldown = 0
@@ -43,6 +44,7 @@ function RollForDodge() {
 function SecondWind() {
 	if (obj_TensionBar.currentTP = 100) { 
 		obj_TensionBar.currentTP = 0
+		audio_play_sound(SecondWindEffect,1,false);
 		instance_create_layer(obj_PlayerHeart.x,obj_PlayerHeart.y-90,"Instances",obj_SecondWind);
 			with(obj_ball) {
 			if(CurrentTarget = "Player") {
